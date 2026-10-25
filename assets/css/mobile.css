@@ -25,7 +25,6 @@
   [data-m="navlinks"]::-webkit-scrollbar { display: none; }
   /* Link for the section on screen, set by nav-spy.js */
   [data-m="navlinks"] a[data-active] { color: #10233B !important; font-weight: 700 !important; }
-  [data-m="footer-schedule"] { display: inline !important; }
 
   /* Hero: smaller photo tiles, kept clear of the headline */
   [data-hero] { padding: 200px 20px 210px !important; }

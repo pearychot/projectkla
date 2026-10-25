@@ -16,6 +16,3 @@
    instead of squeezing the text underneath the Back / Next buttons. */
 [data-m="story"] { overflow-y: auto !important; }
 [data-m="story"] > * { flex-shrink: 0; }
-
-/* The footer Schedule link is for phones, where the nav is a swipeable row */
-[data-m="footer-schedule"] { display: none; }
