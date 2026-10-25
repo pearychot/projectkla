@@ -652,7 +652,6 @@ class Component extends DCLogic {
         const c = this.state.pearCh ?? 0;
         const L = ['DREAM DAY', '2024', 'TESTIMONIALS', '2026'];
         const btn = { border: 'none', background: 'none', fontFamily: 'inherit', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', cursor: 'pointer', padding: '12px 0', minHeight: 44 };
-        const P = 'uploads/Pears Story Photos/Dream Day - ';
         return {
           pear0: c === 0, pear1: c === 1, pear2: c === 2, pear3: c === 3,
           pearLabel: L[c],
@@ -663,12 +662,12 @@ class Component extends DCLogic {
           pearNextStyle: { ...btn, color: '#FFFFFF', background: 'rgba(255,255,255,0.14)', borderRadius: 999, padding: '12px 22px' },
           pearNextLabel: c === 3 ? 'START OVER' : 'NEXT →',
           pearSchools: [
-            { img: RS(P + 'Bangkok University International Program.png'), name: 'Bangkok University — International Program' },
-            { img: RS(P + 'Bangkok University Scholarship Program.png'), name: 'Bangkok University — Scholarship Program' },
-            { img: RS(P + 'Triamudom Suksa School.png'), name: 'Triamudom Suksa School' },
-            { img: RS(P + 'Bangkok Patana School.png'), name: 'Bangkok Patana School' },
-            { img: RS(P + 'Singapore International School Bangkok.png'), name: 'Singapore International School Bangkok' },
-            { img: RS(P + 'Ruamrudee International School.png'), name: 'Ruamrudee International School' }
+            { img: 'assets/images/dream-day-bangkok-university-international-program.jpg', name: 'Bangkok University — International Program' },
+            { img: 'assets/images/dream-day-bangkok-university-scholarship-program.jpg', name: 'Bangkok University — Scholarship Program' },
+            { img: 'assets/images/dream-day-triamudom-suksa-school.jpg', name: 'Triamudom Suksa School' },
+            { img: 'assets/images/dream-day-bangkok-patana-school.jpg', name: 'Bangkok Patana School' },
+            { img: 'assets/images/dream-day-singapore-international-school-bangkok.jpg', name: 'Singapore International School Bangkok' },
+            { img: 'assets/images/dream-day-ruamrudee-international-school.jpg', name: 'Ruamrudee International School' }
           ]
         };
       })(),
