@@ -6,6 +6,24 @@ install, no external CDN. Every file it needs is in this repo.
 
 Live at <https://www.pearchot.com/projectkla>.
 
+## Adding it to the Foundation website
+
+To publish this page at `zhoueesleyfoundation.com/programs/bangkok/projectkla/`
+and link it from the [Bangkok program post](https://www.zhoueesleyfoundation.com/programs/bangkok/),
+clone this repo next to the foundation site repo and give your coding agent
+this prompt from inside the foundation site repo:
+
+```
+Read ../projectkla/docs/add-to-foundation-site.md and follow it: add the
+Project KLA page at /programs/bangkok/projectkla/ and link it from the
+Bangkok program post in the two places it describes. Verify locally, then
+open a PR.
+```
+
+[`docs/add-to-foundation-site.md`](docs/add-to-foundation-site.md) covers
+where the files go, the exact spots in the post to add the links, and how to
+verify the result.
+
 ## Run it locally
 
 Any static file server works. With Python:
