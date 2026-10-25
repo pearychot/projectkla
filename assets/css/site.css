@@ -1,12 +1,16 @@
 /* Rules for every screen size. Phone-only layout lives in mobile.css. */
 
-/* Flip cards: fully hide the face that is turned away, switching halfway
-   through the 0.65s flip when the card is edge-on. Without this the hidden
-   back face (which scrolls) sits on top and swallows touch scrolling, and
-   Safari lets the front's frosted name panel show through the back. */
-[data-flip] > div > div { transition: visibility 0s linear 0.32s; }
+/* Flip cards: fully hide the face that is turned away. Without this the
+   hidden back face (which scrolls) sits on top and swallows touch scrolling,
+   and Safari lets the front's frosted name panel show through the back.
+   The incoming face is shown at once (backface-visibility keeps it invisible
+   until it turns toward the viewer); the outgoing face is hidden at 0.218s,
+   when the 0.65s cubic-bezier(0.4,0.1,0.2,1) flip passes edge-on (90deg).
+   Hiding it any later leaves a moment with neither face drawn (a flicker). */
+[data-flip="0"] > div > div:first-child,
+[data-flip="1"] > div > div:last-child { visibility: visible; transition: visibility 0s; }
 [data-flip="0"] > div > div:last-child,
-[data-flip="1"] > div > div:first-child { visibility: hidden; }
+[data-flip="1"] > div > div:first-child { visibility: hidden; transition: visibility 0s linear 0.218s; }
 
 /* Pear's story pop-up: when a chapter is taller than the screen, scroll
    instead of squeezing the text underneath the Back / Next buttons. */
