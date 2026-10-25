@@ -23,6 +23,9 @@
     -webkit-overflow-scrolling: touch;
   }
   [data-m="navlinks"]::-webkit-scrollbar { display: none; }
+  /* Link for the section on screen, set by nav-spy.js */
+  [data-m="navlinks"] a[data-active] { color: #10233B !important; font-weight: 700 !important; }
+  [data-m="footer-schedule"] { display: inline !important; }
 
   /* Hero: smaller photo tiles, kept clear of the headline */
   [data-hero] { padding: 200px 20px 210px !important; }
@@ -57,6 +60,11 @@
 
   /* Modals */
   [data-m="modal"] { padding: 48px 22px 28px !important; }
+  [data-m="story"] { max-height: calc(100vh - 32px) !important; }
+  [data-m="story-pad"] { padding-left: 22px !important; padding-right: 22px !important; }
+  [data-m="story-school"] { height: 72px !important; }
+  [data-m="story"] h2 { font-size: 24px !important; }
+  [data-m="story"] p { font-size: 15.5px !important; line-height: 1.6 !important; }
 
   /* Schedule: transpose the week grid so days run down the page and
      morning / afternoon / evening are three readable columns */
