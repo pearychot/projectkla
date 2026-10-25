@@ -13,6 +13,7 @@
 <title>Bangkok Program · Zhou &amp; Eesley Family Foundation</title>
 <meta name="description" content="AI and entrepreneurship workshops in Bangkok, 14–23 December 2026, from the Zhou &amp; Eesley Family Foundation.">
 <link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/mobile.css">
 <script src="assets/js/resources.js"></script>
 <script src="assets/js/dc-runtime.js"></script>
 </head>
@@ -42,9 +43,9 @@ a { color:#24507E; } a:hover { color:#10233B; }
   </div>
 
   <!-- NAV -->
-  <nav style="position:fixed; top:14px; left:16px; right:16px; z-index:50; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:16px clamp(16px,2vw,28px); background:rgba(255,255,255,0.9); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-radius:16px; box-shadow:0 6px 24px rgba(16,35,59,0.10);">
-    <a href="#top" style="text-decoration:none; color:#10233B; font-size:clamp(14px,1.5vw,20px); white-space:nowrap;"><span style="font-family:'EB Garamond',serif; font-style:italic; font-weight:600;">Zhou &amp; Eesley Family Foundation</span> <span style="font-family:'EB Garamond',serif;">in Bangkok</span></a>
-    <div style="display:flex; gap:clamp(10px,1.3vw,20px); align-items:center; font-size:clamp(12px,1.05vw,13.5px); font-weight:400;">
+  <nav data-m="nav" style="position:fixed; top:14px; left:16px; right:16px; z-index:50; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:16px clamp(16px,2vw,28px); background:rgba(255,255,255,0.9); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-radius:16px; box-shadow:0 6px 24px rgba(16,35,59,0.10);">
+    <a href="#top" data-m="brand" style="text-decoration:none; color:#10233B; font-size:clamp(14px,1.5vw,20px); white-space:nowrap;"><span style="font-family:'EB Garamond',serif; font-style:italic; font-weight:600;">Zhou &amp; Eesley Family Foundation</span> <span style="font-family:'EB Garamond',serif;">in Bangkok</span></a>
+    <div data-m="navlinks" style="display:flex; gap:clamp(10px,1.3vw,20px); align-items:center; font-size:clamp(12px,1.05vw,13.5px); font-weight:400;">
       <a href="#program" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Program</a>
       <a href="#curriculum" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Curriculum</a>
       <a href="#cohost" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Co-host</a>
@@ -52,7 +53,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
       <a href="#team" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Teaching Team</a>
       <a href="#faq" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">FAQ</a>
       <a href="#attend" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Attend</a>
-      <a href="Schedule.dc.html" sc-camel-on-click="{{ goSchedule }}" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Schedule</a>
+      <a href="schedule/" sc-camel-on-click="{{ goSchedule }}" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Schedule</a>
     </div>
   </nav>
 
@@ -90,7 +91,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
     </div>
 
     <!-- ABOUT + WORD REVEAL -->
-    <div style="padding:130px 32px 60px;">
+    <div data-m="sec" style="padding:130px 32px 60px;">
       <div style="max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:30px;">
         <p data-wordblock="1" style="margin:0; font-size:clamp(24px,2.8vw,38px); line-height:1.4; font-weight:500; color:#10233B;"><sc-for list="{{ aboutWords1 }}" as="w" hint-placeholder-count="18"><span data-wrd="1" style="opacity:0.15; transition:opacity 0.3s ease; font-weight:{{ w.fw }};">{{ w.t }}</span></sc-for></p>
         <p data-wordblock="1" style="margin:0; font-size:clamp(24px,2.8vw,38px); line-height:1.4; font-weight:500; color:#10233B;"><sc-for list="{{ aboutWords2 }}" as="w" hint-placeholder-count="16"><span data-wrd="1" style="opacity:0.15; transition:opacity 0.3s ease; font-weight:{{ w.fw }};">{{ w.t }}</span></sc-for></p>
@@ -127,9 +128,9 @@ a { color:#24507E; } a:hover { color:#10233B; }
           <h2 style="margin:0; font-weight:900; font-size:36px;">What We Teach</h2>
           <p style="margin:0; font-size:17px; line-height:1.65; color:#33465C; max-width:700px;">The same frameworks Professor Chuck Eesley teaches at Stanford, adapted for classrooms and teams in Bangkok. Choose the module that fits your group, or combine several.</p>
         </div>
-        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+        <div data-m="cols1" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
           <sc-for list="{{ modules }}" as="md" hint-placeholder-count="3">
-            <div sc-camel-on-click="{{ md.toggle }}" style="perspective:1600px; cursor:pointer; height:400px;">
+            <div data-m="flip-module" sc-camel-on-click="{{ md.toggle }}" style="perspective:1600px; cursor:pointer; height:400px;">
               <div style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition:transform 0.65s cubic-bezier(0.4,0.1,0.2,1); transform:{{ md.rot }};">
                 <div style="position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; border:1px solid #D8DEE6; background:#FFFFFF; border-radius:20px; padding:32px; display:flex; flex-direction:column; gap:18px; box-shadow:0 8px 26px rgba(16,35,59,0.07);">
                   <div style="font-size:13px; font-weight:700; letter-spacing:0.12em; color:#2E6DAE;">MODULE {{ md.num }}</div>
@@ -156,9 +157,9 @@ a { color:#24507E; } a:hover { color:#10233B; }
       <div data-reveal="1" style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
         <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:12px;">
           <h2 style="margin:0; font-weight:900; font-size:36px; color:#FFFFFF;">Teaching Team</h2>        </div>
-        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+        <div data-m="team-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
           <sc-for list="{{ team }}" as="m" hint-placeholder-count="4">
-            <div sc-camel-on-click="{{ m.toggle }}" style="perspective:1400px; cursor:pointer; height:400px;">
+            <div data-m="flip-team" sc-camel-on-click="{{ m.toggle }}" style="perspective:1400px; cursor:pointer; height:400px;">
               <div style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition:transform 0.65s cubic-bezier(0.4,0.1,0.2,1); transform:{{ m.rot }};">
                 <div style="position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:20px; overflow:hidden; background:repeating-linear-gradient(45deg, #35618F, #35618F 12px, #3E6C9C 12px, #3E6C9C 24px); box-shadow:0 10px 30px rgba(0,0,0,0.25); display:flex; flex-direction:column; justify-content:flex-end;">
                   <div style="{{ m.photoStyle }}"></div>
@@ -188,7 +189,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
     <div id="audience" data-reveal="1" style="padding:120px 32px;">
       <div style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:32px;">
         <h2 style="margin:0; font-weight:900; font-size:36px;">Who The Workshops Are For</h2>
-        <div style="display:flex; flex-wrap:wrap; gap:4px; align-self:flex-start; background:rgba(255,255,255,0.55); border-radius:999px; padding:5px;">
+        <div data-m="pills" style="display:flex; flex-wrap:wrap; gap:4px; align-self:flex-start; background:rgba(255,255,255,0.55); border-radius:999px; padding:5px;">
           <sc-for list="{{ audGroups }}" as="g" hint-placeholder-count="5">
             <button sc-camel-on-click="{{ g.sel }}" style="{{ g.rowStyle }}">{{ g.label }}</button>
           </sc-for>
@@ -217,7 +218,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
       <div data-reveal="1" style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
         <h2 style="margin:0; font-weight:900; font-size:36px;">What The Workshop Looks Like</h2>
         <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr)); gap:56px; align-items:start;">
-          <div style="display:flex; flex-direction:column; position:sticky; top:100px;">
+          <div data-m="unstick" style="display:flex; flex-direction:column; position:sticky; top:100px;">
             <sc-for list="{{ vSteps }}" as="st" hint-placeholder-count="3">
               <div sc-camel-on-click="{{ st.sel }}" style="display:grid; grid-template-columns:48px minmax(0,1fr); gap:22px; cursor:pointer;">
                 <div style="display:flex; flex-direction:column; align-items:center;">
@@ -231,7 +232,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
               </div>
             </sc-for>
           </div>
-          <div style="background:#FFFFFF; border:1px solid #E3E7EC; border-radius:22px; padding:32px 36px; min-height:520px;">
+          <div data-m="formbox" style="background:#FFFFFF; border:1px solid #E3E7EC; border-radius:22px; padding:32px 36px; min-height:520px;">
             <iframe ref="{{ frameRef }}" src="{{ formSrc }}" title="Design a workshop with us" style="{{ formFrameStyle }}"></iframe>
           </div>
         </div>
@@ -242,7 +243,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
     <div id="whybangkok" style="position:relative; overflow:hidden;">
       <img src="assets/images/img0.jpg" alt="2024 Bangkok school workshops" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:15% 50%;">
       <div style="position:absolute; inset:0; background:linear-gradient(100deg,#050F1D 0%,#0E2440 45%, rgba(14,36,64,0.55) 75%, rgba(14,36,64,0.12) 100%);"></div>
-      <div style="position:relative; max-width:1100px; margin:0 auto; padding:150px 32px;">
+      <div data-m="sec" style="position:relative; max-width:1100px; margin:0 auto; padding:150px 32px;">
         <div data-reveal="1" style="display:flex; flex-direction:column; gap:22px; color:#FFFFFF; max-width:560px;">
           <h2 style="margin:0; font-weight:900; font-size:36px;">Why Bangkok</h2>
           <p style="margin:0; font-size:17px; line-height:1.75; color:rgba(255,255,255,0.92);">Thailand has no shortage of ambitious students, but few structured chances to build something of their own. In 2024, Pear Chotbunwong saw the appetite firsthand while running workshops for 500+ students across 10 Bangkok schools — the 2026 program brings that work back at scale.</p>
@@ -253,7 +254,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
 
     <!-- SPONSOR (on sky) -->
     <div id="sponsor" data-reveal="1" style="padding:130px 32px;">
-      <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 400px; gap:56px; align-items:start;">
+      <div data-m="cols1" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 400px; gap:56px; align-items:start;">
         <div style="display:flex; flex-direction:column; gap:22px; color:#10233B;">
           <h2 style="margin:0; font-weight:900; font-size:40px; text-wrap:balance;">Help Make The Bangkok Program Possible</h2>
           <p style="margin:0; font-size:18px; line-height:1.7; max-width:560px; color:#33465C;">The program is initiated and supported by the Zhou &amp; Eesley Family Foundation, and all instructors teach pro bono.</p>
@@ -313,7 +314,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
     </div>
 
     <!-- FOOTER -->
-    <div style="background:#10233B; color:#E8EEF5; padding:30px 48px;">
+    <div data-m="footer" style="background:#10233B; color:#E8EEF5; padding:30px 48px;">
       <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; font-size:14px; flex-wrap:wrap; gap:16px;">
         <span style="font-family:'EB Garamond',serif; font-style:italic; font-size:17px;">Zhou &amp; Eesley Family Foundation · © 2026</span>
         <div style="display:flex; gap:24px;">
@@ -408,7 +409,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
   </sc-if>
   <sc-if value="{{ attendOpen }}" hint-placeholder-val="{{ false }}">
     <div sc-camel-on-click="{{ closeAttend }}" style="position:fixed; inset:0; z-index:200; background:rgba(16,35,59,0.55); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
-      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:1020px; max-height:calc(100vh - 48px); overflow:auto; background:#FBF9F4; border-radius:24px; padding:56px 52px; box-shadow:0 16px 50px rgba(16,35,59,0.25); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:44px; align-items:start; color:#10233B;">
+      <div data-m="modal" sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:1020px; max-height:calc(100vh - 48px); overflow:auto; background:#FBF9F4; border-radius:24px; padding:56px 52px; box-shadow:0 16px 50px rgba(16,35,59,0.25); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:44px; align-items:start; color:#10233B;">
         <button sc-camel-on-click="{{ closeAttend }}" aria-label="Close" style="position:absolute; top:16px; right:16px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
         <div style="display:flex; flex-direction:column; gap:20px;">
           <h2 style="margin:0; font-weight:900; font-size:clamp(28px,3.2vw,40px); text-wrap:balance;">Attend a Workshop</h2>
@@ -430,7 +431,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
   <div style="{{ leaveStyle }}"></div>
   <sc-if value="{{ contactOpen }}" hint-placeholder-val="{{ false }}">
     <div sc-camel-on-click="{{ closeContact }}" style="position:fixed; inset:0; z-index:210; background:rgba(16,35,59,0.55); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
-      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:min(440px, 100%); max-height:calc(100vh - 48px); overflow:auto; box-sizing:border-box; background:#FFFFFF; border-radius:24px; box-shadow:0 16px 50px rgba(16,35,59,0.25); padding:48px 48px 44px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; color:#10233B;">
+      <div data-m="modal" sc-camel-on-click="{{ stopProp }}" style="position:relative; width:min(440px, 100%); max-height:calc(100vh - 48px); overflow:auto; box-sizing:border-box; background:#FFFFFF; border-radius:24px; box-shadow:0 16px 50px rgba(16,35,59,0.25); padding:48px 48px 44px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; color:#10233B;">
         <button sc-camel-on-click="{{ closeContact }}" aria-label="Close" style="position:absolute; top:16px; right:16px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
         <h2 style="margin:0 0 10px; font-weight:900; font-size:26px; line-height:1.2; text-wrap:balance;">Contact the Bangkok Program Team</h2>
         <img src="assets/images/img13.jpg" alt="Pear Chotbunwong" style="width:110px; height:110px; border-radius:50%; object-fit:cover; object-position:center 22%;">
@@ -447,7 +448,7 @@ a { color:#24507E; } a:hover { color:#10233B; }
   </sc-if>
   <sc-if value="{{ budgetOpen }}" hint-placeholder-val="{{ false }}">
     <div sc-camel-on-click="{{ closeBudget }}" style="position:fixed; inset:0; z-index:200; background:rgba(16,35,59,0.45); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
-      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:780px; max-height:calc(100vh - 48px); overflow:auto; background:#FBF9F4; border-radius:24px; padding:56px 56px 48px; box-shadow:0 16px 50px rgba(16,35,59,0.25); display:flex; flex-direction:column; gap:28px; color:#10233B;">
+      <div data-m="modal" sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:780px; max-height:calc(100vh - 48px); overflow:auto; background:#FBF9F4; border-radius:24px; padding:56px 56px 48px; box-shadow:0 16px 50px rgba(16,35,59,0.25); display:flex; flex-direction:column; gap:28px; color:#10233B;">
         <button sc-camel-on-click="{{ closeBudget }}" aria-label="Close" style="position:absolute; top:18px; right:18px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
         <div>
           <h2 style="margin:0; font-weight:900; font-size:clamp(28px,3.2vw,40px);">Bangkok Program Budget</h2>
@@ -671,7 +672,7 @@ class Component extends DCLogic {
           ]
         };
       })(),
-      goSchedule: (ev) => { ev.preventDefault(); this.setState({ leaving: true }); setTimeout(() => { window.location.href = 'Schedule.dc.html'; }, 520); },
+      goSchedule: (ev) => { ev.preventDefault(); this.setState({ leaving: true }); setTimeout(() => { window.location.href = 'schedule/'; }, 520); },
       leaveStyle: { position: 'fixed', inset: 0, zIndex: 300, pointerEvents: this.state.leaving ? 'auto' : 'none', background: 'linear-gradient(180deg, #D8EBFB 0%, #BFDCF5 38%, #9EC8EC 100%)', opacity: this.state.leaving ? 1 : 0, transition: 'opacity 0.5s cubic-bezier(0.4,0,0.2,1)' },
       contactOpen: !!this.state.contactOpen,
       openContact: (ev) => { ev.preventDefault(); this.setState({ contactOpen: true }); },

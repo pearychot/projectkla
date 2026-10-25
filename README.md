@@ -46,14 +46,16 @@ All paths are relative, so the site works at a domain root
 - **Netlify**: import the repo with no build command and `.` as the publish
   directory.
 - **GitHub Pages**: Settings → Pages → deploy from the `main` branch, `/ (root)`.
-- **Any web host**: upload `index.html` and the `assets/` folder as they are.
+- **Any web host**: upload `index.html`, `schedule/` and `assets/` as they are.
 
 ## What's in here
 
 ```
-index.html                 page markup, styles, and page logic
+index.html                 main page: markup, styles, and page logic
+schedule/index.html        program schedule page (linked from the nav)
 assets/
   css/fonts.css            @font-face rules (Chivo, EB Garamond)
+  css/mobile.css           phone layout (≤700px), keyed to data-m attributes
   fonts/                   self-hosted font files
   images/                  photos used on the page
   js/resources.js          maps image ids (res0…res19) to files in assets/images
@@ -63,6 +65,10 @@ assets/
 
 ## Editing
 
+- **Schedule**: edit `schedule/index.html`. The sessions are in the data near
+  the bottom of the file.
+- **Phone layout**: `assets/css/mobile.css`. Desktop styles are inline in the
+  HTML; the phone rules override them below 700px.
 - **Text, links, and FAQ**: edit `index.html`. The page content (workshops,
   team, FAQ, modules, schedule) lives in the `renderVals()` data near the
   bottom of the file, and the layout is the `<x-dc>` template above it.

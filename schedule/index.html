@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Asset paths are relative, so a subfolder URL needs its trailing slash
+// (example.org/bangkok → example.org/bangkok/) before anything loads.
+(function () {
+  var p = location.pathname;
+  if (!/(\/|\.html?)$/.test(p)) history.replaceState(null, '', p + '/' + location.search + location.hash);
+})();
+</script>
+<title>Schedule · Bangkok Program · Zhou &amp; Eesley Family Foundation</title>
+<meta name="description" content="Workshop schedule for the Bangkok program, 14–23 December 2026.">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/mobile.css">
+<script src="../assets/js/resources.js"></script>
+<script src="../assets/js/dc-runtime.js"></script>
+</head>
+<body>
+
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { margin:0; background:#BFDCF5; font-family:'Chivo',sans-serif; color:#10233B; }
+a { color:#24507E; } a:hover { color:#10233B; }
+</style>
+</helmet>
+<div>
+  <div style="position:fixed; inset:0; z-index:0; background:linear-gradient(180deg, #D8EBFB 0%, #BFDCF5 38%, #9EC8EC 100%);"></div>
+  <nav data-m="nav" style="position:fixed; top:14px; left:16px; right:16px; z-index:50; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:16px clamp(16px,2vw,28px); background:rgba(255,255,255,0.9); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-radius:16px; box-shadow:0 6px 24px rgba(16,35,59,0.10);">
+    <a href="../" data-m="brand" style="text-decoration:none; color:#10233B; font-size:clamp(14px,1.5vw,20px); white-space:nowrap;"><span style="font-family:'EB Garamond',serif; font-style:italic; font-weight:600;">Zhou &amp; Eesley Family Foundation</span> <span style="font-family:'EB Garamond',serif;">in Bangkok</span></a>
+    <div data-m="navlinks" style="display:flex; gap:clamp(10px,1.3vw,20px); align-items:center; font-size:clamp(12px,1.05vw,13.5px); font-weight:400;">
+      <a href="../#program" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Program</a>
+      <a href="../#curriculum" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Curriculum</a>
+      <a href="../#cohost" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Co-host</a>
+      <a href="../#sponsor" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Sponsor</a>
+      <a href="../#team" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Teaching Team</a>
+      <a href="../#faq" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">FAQ</a>
+      <a href="../#attend" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Attend</a>
+      <a href="./" style="color:#10233B; text-decoration:none; font-weight:700; white-space:nowrap;">Schedule</a>
+    </div>
+  </nav>
+
+  <div data-m="sched-page" style="position:relative; z-index:1; padding:150px 32px 110px;">
+
+      <div style="max-width:1320px; margin:0 auto; display:flex; flex-direction:column; gap:26px;">
+        <div style="{{ in1 }}">
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <h1 style="margin:0; font-weight:900; font-size:clamp(30px,3.6vw,44px);">Bangkok Program Schedule</h1>
+            <div style="font-size:17px; color:#24507E; font-weight:700;">14–23 December 2026 <span style="font-size:14px; font-weight:400; color:#33465C;">(schedule is subject to change)</span></div>
+          </div>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <sc-for list="{{ legend }}" as="l" hint-placeholder-count="6">
+              <div style="display:flex; align-items:center; gap:6px; font-size:12.5px; color:#10233B;"><span style="{{ l.dot }}"></span>{{ l.label }}</div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="{{ in2 }}">
+          <div data-m="sched-card" style="flex:1 1 480px; min-width:0; box-sizing:border-box; background:rgba(255,255,255,0.92); border-radius:24px; padding:22px; box-shadow:0 16px 50px rgba(16,35,59,0.12); display:flex; flex-direction:column; gap:24px;">
+            <sc-for list="{{ weeks }}" as="w" hint-placeholder-count="2">
+              <div data-m="sched-grid" style="display:grid; grid-template-columns:32px repeat(7,minmax(0,1fr)); gap:4px;">
+                <div></div>
+                <sc-for list="{{ w.days }}" as="d" hint-placeholder-count="7">
+                  <div style="{{ d.head }}"><div style="font-size:10px; font-weight:700; letter-spacing:0.1em; color:#5A6B7E;">{{ d.dow }}</div><div style="font-size:16px; font-weight:900;">{{ d.num }}</div></div>
+                </sc-for>
+                <sc-for list="{{ w.rows }}" as="r" hint-placeholder-count="3">
+                  <div style="font-size:10px; font-weight:700; letter-spacing:0.08em; color:#8A97A6; align-self:center;">{{ r.label }}</div>
+                  <sc-for list="{{ r.cells }}" as="c" hint-placeholder-count="7">
+                    <div sc-camel-on-click="{{ c.sel }}" style="{{ c.box }}">{{ c.title }}</div>
+                  </sc-for>
+                </sc-for>
+              </div>
+            </sc-for>
+            <div style="font-size:12.5px; color:#5A6B7E;">Select any session to see details.</div>
+          </div>
+          <div data-m="sched-detail" style="flex:0 1 290px; min-width:260px; box-sizing:border-box; max-width:380px; position:sticky; top:110px; background:#10233B; color:#FFFFFF; border-radius:24px; padding:30px; display:flex; flex-direction:column; gap:14px; box-shadow:0 16px 50px rgba(16,35,59,0.2);">
+            <div style="display:flex; align-items:center; gap:8px;"><span style="{{ det.dot }}"></span><span style="font-size:11px; font-weight:700; letter-spacing:0.12em; color:#8FB8E0;">{{ det.kind }}</span></div>
+            <div style="font-size:12px; font-weight:700; letter-spacing:0.1em; color:#AACDEE;">{{ det.when }}</div>
+            <h2 style="margin:0; font-size:24px; font-weight:900; line-height:1.25;">{{ det.title }}</h2>
+            <sc-if value="{{ det.sub }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0; font-size:15px; line-height:1.65; color:#E8EEF5; white-space:pre-line;">{{ det.sub }}</p>
+            </sc-if>
+            <sc-if value="{{ det.url }}" hint-placeholder-val="{{ false }}">
+              <a href="{{ det.url }}" target="_blank" rel="noopener" style="align-self:flex-start; margin-top:6px; color:#FFFFFF; border:1.5px solid rgba(255,255,255,0.7); border-radius:999px; padding:12px 22px; font-size:12.5px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:rgba(255,255,255,0.12); color:#FFFFFF;">VISIT SCHOOL PAGE ↗</a>
+            </sc-if>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div data-m="footer" style="position:relative; z-index:1; background:#10233B; color:#E8EEF5; padding:30px 48px;">
+    <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; font-size:14px; flex-wrap:wrap; gap:16px;">
+      <span style="font-family:'EB Garamond',serif; font-style:italic; font-size:17px;">Zhou &amp; Eesley Family Foundation · © 2026</span>
+      <div style="display:flex; gap:24px;">
+        <a href="https://www.zhoueesleyfoundation.com/" style="color:#E8EEF5;" style-hover="color:#AACDEE;">About Foundation</a>
+        <a href="https://tally.so/r/aOQVgy" target="_blank" rel="noopener" style="color:#E8EEF5;" style-hover="color:#AACDEE;">Partner</a>
+        <a href="#top" sc-camel-on-click="{{ openContact }}" style="color:#E8EEF5; cursor:pointer;" style-hover="color:#AACDEE;">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <sc-if value="{{ contactOpen }}" hint-placeholder-val="{{ false }}">
+    <div sc-camel-on-click="{{ closeContact }}" style="position:fixed; inset:0; z-index:210; background:rgba(16,35,59,0.55); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
+      <div data-m="modal" sc-camel-on-click="{{ stopProp }}" style="position:relative; width:min(440px, 100%); max-height:calc(100vh - 48px); overflow:auto; box-sizing:border-box; background:#FFFFFF; border-radius:24px; box-shadow:0 16px 50px rgba(16,35,59,0.25); padding:48px 48px 44px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; color:#10233B;">
+        <button sc-camel-on-click="{{ closeContact }}" aria-label="Close" style="position:absolute; top:16px; right:16px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
+        <h2 style="margin:0 0 10px; font-weight:900; font-size:26px; line-height:1.2; text-wrap:balance;">Contact the Bangkok Program Team</h2>
+        <img src="../assets/images/img13.jpg" alt="Pear Chotbunwong" style="width:110px; height:110px; border-radius:50%; object-fit:cover; object-position:center 22%;">
+        <div style="font-size:22px; font-weight:700;">Pear Chotbunwong</div>
+        <div style="font-size:14px; color:#5A6B7E; margin-top:-8px;">Bangkok Program Coordinator</div>
+        <div style="display:flex; flex-direction:column; gap:8px; font-size:15px; margin-top:6px;">
+          <a href="mailto:pearchot@stanford.edu" style="color:#24507E;" style-hover="color:#10233B;">pearchot@stanford.edu</a>
+          <a href="tel:+66899265492" style="color:#10233B; text-decoration:none;" style-hover="color:#24507E;">+66 89-926-5492</a>
+          <span>LINE ID: pearc.</span>
+        </div>
+        <a href="mailto:pearchot@stanford.edu" style="margin-top:14px; background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 28px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#24507E; color:#FFFFFF;">SUBMIT AN INQUIRY</a>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  state = { week: 0, pick: '14-am', shown: false };
+  componentDidMount() { requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ shown: true }))); }
+  renderVals() {
+    const variant = 'C';
+    const K = {
+      uni: { label: 'University', bg: '#E6EEF9', bar: '#2E6DAE', fg: '#10233B' },
+      school: { label: 'School', bg: '#EFE9F8', bar: '#7558B0', fg: '#2B1C4A' },
+      pub: { label: 'Public', bg: '#FBF1DC', bar: '#C8902E', fg: '#5A3E0A' },
+      corp: { label: 'Corporate', bg: '#E3F2EA', bar: '#2E8A5A', fg: '#0F3B25' },
+      dinner: { label: 'Dinner', bg: '#E3F5F4', bar: '#5BB5B0', fg: '#1F4B49' },
+      travel: { label: 'Travel', bg: '#EEF1F5', bar: '#9AA6B4', fg: '#33465C' }
+    };
+    const ev = {
+      14: { am: ['Dhamajarinee Witthaya School', 'school', 'Samut Songkhram\nAll-girls school, run by Buddhist nuns. 1.5 hrs drive.', 'https://www.thaischool.org/'], eve: ['Travel back to Bangkok', 'travel'] },
+      15: { am: ['Wat Sa Kaeo School', 'school', 'Ang Thong\nCo-ed temple school. 1.5 hrs drive.', 'https://www.facebook.com/p/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B8%AF-%E0%B8%88%E0%B8%AD%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87-100064749697060/?locale=th_TH'], eve: ['Travel back to Bangkok', 'travel'] },
+      16: { am: ['Bangkok University · venture building', 'uni', 'Train-the-Trainer.'], pm: ['Bangkok University · applied AI', 'uni', 'Train-the-Trainer.'], eve: ['Bangkok University + Pear\'s family', 'dinner'] },
+      18: { am: ['Thu Dau Mot University (TDMU) · full day', 'uni'], pm: ['Thu Dau Mot University (TDMU) · full day', 'uni'] },
+      20: { am: ['AIS Open Workshop', 'pub', 'for Select Coding Teachers, AIS Fellows, Nonprofit Partners'], pm: ['[Tentative] Chulalongkorn Entrepreneurship Club', 'uni'], eve: ['Buddharaksa Foundation', 'dinner'] },
+      21: { am: ['AIS executive talk', 'corp'], pm: ['AIS ecosystem partners', 'corp'], eve: ['AIS', 'dinner'] },
+      22: { am: ['[Tentative] Fly to Chiangmai', 'travel'], pm: ['', 'travel'], eve: ['[Tentative overnight stay]', 'travel'] },
+      23: { am: ['Border Patrol Police School Foundation (BSF)', 'school', 'Under the Royal Patronage of HRH Princess Maha Chakri Sirindhorn\nTrain-the-Trainer.'], pm: ['[Tentative] Fly back to Bangkok', 'travel'], eve: ['', 'travel'] }
+    };
+    const travel = { 13: 'Fly into Bangkok', 17: 'Fly to Vietnam', 19: 'Fly back to Bangkok', 24: 'Fly out of Bangkok' };
+    const travelSub = { 13: 'Chuck + Lijie', 24: 'Chuck + Lijie' };
+    const DOW = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+    const DOWL = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const SL = { am: 'Morning', pm: 'Afternoon', eve: 'Evening' };
+    const dowOf = n => (n - 13) % 7;
+    const isC = variant === 'C', isB = variant === 'B';
+    const H = isB ? 118 : isC ? 66 : 92;
+
+    const get = (n, s) => {
+      if (travel[n] && s !== 'eve') return s === 'am' ? [travel[n], 'travel', travelSub[n] || ''] : ['', 'travel'];
+      return (ev[n] && ev[n][s]) || null;
+    };
+    const cell = (n, s) => {
+      const e = get(n, s), key = n + '-' + s, picked = isC && this.state.pick === key;
+      const base = { minHeight: s === 'eve' ? H / 2 : H, borderRadius: 8, padding: isB ? '10px' : isC ? '6px' : '7px 8px', fontSize: isB ? 13 : isC ? 11.5 : 12, lineHeight: 1.3, boxSizing: 'border-box', overflowWrap: 'anywhere' };
+      if (!e) return { title: '', sub: '', url: '', noUrl: true, sel: () => {}, box: { ...base, border: '1px dashed #D2D9E1', background: s === 'eve' ? 'rgba(250,251,252,0.7)' : 'transparent' } };
+      const k = K[e[1]], gray = e[1] === 'travel' || e[1] === 'dinner';
+      const box = gray
+        ? { ...base, background: k.bg, color: k.fg, fontWeight: 400, border: e[1] === 'dinner' ? '1px solid #BFE3E0' : '1px dashed #C6CFD9' }
+        : { ...base, background: k.bg, color: k.fg, fontWeight: 700, borderLeft: '3px solid ' + k.bar };
+      if (isC && e[0]) { box.cursor = 'pointer'; if (picked) box.boxShadow = '0 0 0 2px #10233B'; }
+      return {
+        title: e[0], sub: isC ? '' : (e[2] || ''), url: isC ? '' : (e[3] || ''), noUrl: isC || !e[3], box,
+        sel: () => {
+          if (!(isC && e[0])) return;
+          this.setState({ pick: key });
+          // On phones the details panel sits below the calendar; bring it into view.
+          if (window.matchMedia('(max-width: 700px)').matches) {
+            const d = document.querySelector('[data-m="sched-detail"]');
+            if (d) setTimeout(() => d.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+          }
+        }
+      };
+    };
+    const day = n => ({ dow: DOW[dowOf(n)], num: n, head: { display: 'flex', flexDirection: 'column', gap: 2, paddingBottom: 6, borderBottom: dowOf(n) === 0 ? '2px solid #10233B' : '2px solid #D8DEE6' } });
+    const blankCell = { title: '', sub: '', url: '', noUrl: true, sel: () => {}, box: {} };
+    const mkWeek = (from, to, label) => {
+      const ns = []; for (let n = from; n <= to; n++) ns.push(n);
+      const pad = 7 - ns.length;
+      const days = ns.map(day).concat(Array(pad).fill({ dow: '', num: '', head: {} }));
+      const rows = ['am', 'pm', 'eve'].map(s => ({ label: s.toUpperCase(), cells: ns.map(n => cell(n, s)).concat(Array(pad).fill(blankCell)) }));
+      return { label, days, rows };
+    };
+    const weeks = [mkWeek(13, 19, 'Week one · December 13–19'), mkWeek(20, 24, 'Week two · December 20–24')];
+    const wk = this.state.week;
+
+    const [pn, ps] = this.state.pick.split('-');
+    const pe = get(+pn, ps) || ['', 'travel'];
+    const pk = K[pe[1]];
+
+    const variants = ['A', 'B', 'C'];
+    const reveal = (d, extra) => ({ ...extra, opacity: this.state.shown ? 1 : 0, transform: this.state.shown ? 'translateY(0)' : 'translateY(24px)', transition: 'opacity 0.8s cubic-bezier(0.2,0.7,0.2,1) ' + d + 's, transform 0.8s cubic-bezier(0.2,0.7,0.2,1) ' + d + 's' });
+    return {
+      contactOpen: !!this.state.contactOpen,
+      openContact: (ev) => { ev.preventDefault(); this.setState({ contactOpen: true }); },
+      closeContact: () => this.setState({ contactOpen: false }),
+      stopProp: (ev) => ev.stopPropagation(),
+      in1: reveal(0.05, { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap' }),
+      in2: reveal(0.2, { display: 'flex', flexWrap: 'wrap', gap: 18, alignItems: 'flex-start' }),
+      isA: variant === 'A', isB, isC,
+      legend: Object.values(K).map(k => ({ label: k.label, dot: { width: 9, height: 9, borderRadius: 999, background: k.bar, display: 'inline-block' } })),
+      weeks,
+      weekShown: [weeks[wk]],
+      weekTabs: ['Week 1 · Dec 13–19', 'Week 2 · Dec 20–24'].map((label, i) => ({ label, sel: () => this.setState({ week: i }), style: i === wk
+        ? { background: '#10233B', color: '#FFFFFF', border: 'none', borderRadius: 999, padding: '11px 22px', fontFamily: 'inherit', fontSize: 14, fontWeight: 700, whiteSpace: 'nowrap', cursor: 'pointer' }
+        : { background: 'transparent', color: '#33465C', border: 'none', borderRadius: 999, padding: '11px 22px', fontFamily: 'inherit', fontSize: 14, fontWeight: 400, whiteSpace: 'nowrap', cursor: 'pointer' } })),
+      otherWeek: () => this.setState({ week: wk ? 0 : 1 }),
+      otherWeekLabel: wk ? '← WEEK 1' : 'WEEK 2 →',
+      det: { kind: pk.label.toUpperCase(), dot: { width: 9, height: 9, borderRadius: 999, background: pk.bar, display: 'inline-block' }, when: DOWL[dowOf(+pn)] + ', Dec ' + pn + ' · ' + SL[ps], title: pe[0], sub: pe[2] || '', url: pe[3] || '' },
+      variants: variants.map(v => ({ label: v, sel: () => this.setState({ variant: v }), style: { width: 36, height: 36, borderRadius: 999, border: 'none', fontFamily: 'inherit', fontSize: 13, fontWeight: 700, cursor: 'pointer', background: v === variant ? '#FFFFFF' : 'transparent', color: v === variant ? '#10233B' : '#E8EEF5' } }))
+    };
+  }
+}
+</script>
+
+</body></html>

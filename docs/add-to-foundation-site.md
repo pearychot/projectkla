@@ -25,12 +25,12 @@ projectkla/                 ← this repo (source of the page)
 ## Step 1: copy the page into the site's `public/` folder
 
 Astro serves everything in `public/` as-is at the same path, with no build
-processing. Copy this repo's `index.html` and `assets/` folder (and nothing
-else) into it:
+processing. Copy this repo's `index.html`, `schedule/` folder and `assets/` folder (and
+nothing else) into it:
 
 ```bash
 mkdir -p <foundation-site-repo>/public/programs/bangkok/projectkla
-cp -R projectkla/index.html projectkla/assets <foundation-site-repo>/public/programs/bangkok/projectkla/
+cp -R projectkla/index.html projectkla/schedule projectkla/assets <foundation-site-repo>/public/programs/bangkok/projectkla/
 ```
 
 Rules:
@@ -96,7 +96,8 @@ Don't change any other wording in the post.
 1. Run the dev server (`npm run dev` or whatever the repo uses) and open
    `http://localhost:4321/programs/bangkok/projectkla/`. Check that:
    - the hero ("Bring hands-on AI and entrepreneurship education to your Bangkok community") renders with photos and the Chivo / EB Garamond fonts
-   - the browser console shows no 404s for `assets/…` (one 404 for a URL containing `{{ formSrc }}` is expected and harmless: it comes from the raw template before the runtime renders it)
+   - the browser console shows no 404s for `assets/…` (404s for URLs containing `{{ … }}`, such as `{{ formSrc }}` or `{{ s.img }}`, are expected and harmless: they come from the raw template before the runtime renders it)
+   - clicking **Schedule** in the nav opens `/programs/bangkok/projectkla/schedule/`, and its nav links lead back to the matching sections on the main page
    - the embedded Tally form appears in the "Co-host" section
 2. Also open `/programs/bangkok/projectkla` (no trailing slash). It should
    load the same page, with the slash added to the address bar.

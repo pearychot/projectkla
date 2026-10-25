@@ -1,0 +1,79 @@
+/* Phone layout. Desktop styles live inline in each page; everything here is
+   scoped to narrow screens and overrides those inline styles, so desktop
+   rendering is untouched. Hooks are the data-m attributes in the markup. */
+@media (max-width: 700px) {
+
+  /* Nav: brand on top, links in a swipeable row underneath */
+  [data-m="nav"] {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 12px 14px 10px !important;
+    top: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+  }
+  [data-m="brand"] { font-size: 16px !important; }
+  [data-m="navlinks"] {
+    width: 100%;
+    gap: 18px !important;
+    font-size: 13px !important;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  [data-m="navlinks"]::-webkit-scrollbar { display: none; }
+
+  /* Hero: smaller photo tiles, kept clear of the headline */
+  [data-hero] { padding: 200px 20px 210px !important; }
+  [data-hero] [data-par] { width: 128px !important; }
+  [data-hero] [data-midtile] { display: none !important; }
+
+  /* Sections: tighter side and vertical padding */
+  #curriculum, #team, #audience, #cohost, #sponsor, #faq, #attend,
+  [data-m="sec"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  [data-m="footer"] { padding: 26px 20px !important; }
+  #curriculum h2, #team h2, #audience h2, #cohost h2, #sponsor h2, #faq h2,
+  [data-m="sec"] h2 { font-size: 30px !important; }
+  [data-m="pills"] { border-radius: 18px !important; }
+
+  /* Multi-column grids stack into one column */
+  [data-m="cols1"] { grid-template-columns: 1fr !important; gap: 28px !important; }
+  [data-m="flip-module"] { height: 360px !important; }
+
+  /* Teaching team: two cards per row */
+  [data-m="team-grid"] { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px !important; }
+  [data-m="flip-team"] { height: 300px !important; }
+  [data-m="flip-team"] > div > div:last-child { padding: 14px !important; }
+
+  /* Co-host steps scroll normally above the form */
+  [data-m="unstick"] { position: static !important; }
+  [data-m="formbox"] { padding: 20px 16px !important; }
+
+  /* Modals */
+  [data-m="modal"] { padding: 48px 22px 28px !important; }
+
+  /* Schedule: transpose the week grid so days run down the page and
+     morning / afternoon / evening are three readable columns */
+  [data-m="sched-page"] { padding: 140px 14px 70px !important; }
+  [data-m="sched-card"] { padding: 14px !important; flex-basis: 100% !important; }
+  [data-m="sched-grid"] {
+    grid-template-columns: 44px repeat(3, minmax(0, 1fr)) !important;
+    grid-template-rows: auto repeat(7, auto);
+    grid-auto-flow: column !important;
+    gap: 6px !important;
+  }
+  [data-m="sched-detail"] {
+    position: static !important;
+    flex: 1 1 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 24px !important;
+    scroll-margin-bottom: 16px;
+  }
+}
