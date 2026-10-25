@@ -2,6 +2,14 @@
 <html><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Asset paths are relative, so a subfolder URL needs its trailing slash
+// (example.org/bangkok → example.org/bangkok/) before anything loads.
+(function () {
+  var p = location.pathname;
+  if (!/(\/|\.html?)$/.test(p)) history.replaceState(null, '', p + '/' + location.search + location.hash);
+})();
+</script>
 <title>Bangkok Program · Zhou &amp; Eesley Family Foundation</title>
 <meta name="description" content="AI and entrepreneurship workshops in Bangkok, 14–23 December 2026, from the Zhou &amp; Eesley Family Foundation.">
 <link rel="stylesheet" href="assets/css/fonts.css">
