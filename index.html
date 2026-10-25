@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bangkok Program · Zhou &amp; Eesley Family Foundation</title>
+<meta name="description" content="AI and entrepreneurship workshops in Bangkok, 14–23 December 2026, from the Zhou &amp; Eesley Family Foundation.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<script src="assets/js/resources.js"></script>
+<script src="assets/js/dc-runtime.js"></script>
+</head>
+<body>
+
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { margin:0; background:#BFDCF5; font-family:'Chivo',sans-serif; color:#10233B; }
+a { color:#24507E; } a:hover { color:#10233B; }
+@keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+@keyframes tileFloat { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
+@keyframes cloudDriftA { from { transform:translateX(-8vw); } to { transform:translateX(60vw); } }
+@keyframes cloudDriftB { from { transform:translateX(70vw); } to { transform:translateX(-30vw); } }
+@keyframes cloudDriftC { from { transform:translateX(-25vw); } to { transform:translateX(80vw); } }
+@keyframes heroUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+</style>
+</helmet>
+<div>
+  <!-- STATIC SKY BACKDROP -->
+  <div style="position:fixed; inset:0; z-index:0; background:linear-gradient(180deg, #D8EBFB 0%, #BFDCF5 38%, #9EC8EC 100%); overflow:hidden;">
+    <div style="position:absolute; top:8%; left:0; width:46vw; height:20vh; background:radial-gradient(closest-side, rgba(255,255,255,0.95), rgba(255,255,255,0) 72%); animation:cloudDriftA 90s linear infinite alternate;"></div>
+    <div style="position:absolute; top:34%; left:0; width:38vw; height:16vh; background:radial-gradient(closest-side, rgba(255,255,255,0.75), rgba(255,255,255,0) 72%); animation:cloudDriftB 120s linear infinite alternate;"></div>
+    <div style="position:absolute; top:62%; left:0; width:52vw; height:22vh; background:radial-gradient(closest-side, rgba(255,255,255,0.65), rgba(255,255,255,0) 72%); animation:cloudDriftC 105s linear infinite alternate;"></div>
+    <div style="position:absolute; top:80%; left:20vw; width:40vw; height:16vh; background:radial-gradient(closest-side, rgba(255,255,255,0.5), rgba(255,255,255,0) 72%); animation:cloudDriftA 140s linear infinite alternate-reverse;"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav style="position:fixed; top:14px; left:16px; right:16px; z-index:50; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:16px clamp(16px,2vw,28px); background:rgba(255,255,255,0.9); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-radius:16px; box-shadow:0 6px 24px rgba(16,35,59,0.10);">
+    <a href="#top" style="text-decoration:none; color:#10233B; font-size:clamp(14px,1.5vw,20px); white-space:nowrap;"><span style="font-family:'EB Garamond',serif; font-style:italic; font-weight:600;">Zhou &amp; Eesley Family Foundation</span> <span style="font-family:'EB Garamond',serif;">in Bangkok</span></a>
+    <div style="display:flex; gap:clamp(10px,1.3vw,20px); align-items:center; font-size:clamp(12px,1.05vw,13.5px); font-weight:400;">
+      <a href="#program" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Program</a>
+      <a href="#curriculum" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Curriculum</a>
+      <a href="#cohost" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Co-host</a>
+      <a href="#sponsor" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Sponsor</a>
+      <a href="#team" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Teaching Team</a>
+      <a href="#faq" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">FAQ</a>
+      <a href="#attend" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Attend</a>
+      <a href="Schedule.dc.html" sc-camel-on-click="{{ goSchedule }}" style="color:#33465C; text-decoration:none; white-space:nowrap;" style-hover="color:#10233B; font-weight:700;">Schedule</a>
+    </div>
+  </nav>
+
+  <div id="top" style="position:relative; z-index:1;">
+
+    <!-- HERO -->
+    <div data-hero="1" style="position:relative; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:150px 32px 100px; gap:24px; overflow:hidden;">
+      <div data-par="-0.20" style="position:absolute; top:11%; left:4%; width:230px; z-index:2;">
+        <div data-tile="1"><img src="assets/images/img8.jpg" alt="Workshop in Bangkok" style="display:block; width:100%; border-radius:16px; border:6px solid #FFFFFF; box-sizing:border-box; box-shadow:0 16px 44px rgba(16,35,59,0.22); animation:tileFloat 7s ease-in-out infinite;"></div>
+      </div>
+      <div data-par="0.16" style="position:absolute; top:13%; right:4%; width:240px; z-index:2;">
+        <div data-tile="1"><img src="assets/images/photo-02.jpg" alt="Penang ATC group" style="display:block; width:100%; border-radius:16px; border:6px solid #FFFFFF; box-sizing:border-box; box-shadow:0 16px 44px rgba(16,35,59,0.22); animation:tileFloat 8.5s 0.6s ease-in-out infinite;"></div>
+      </div>
+      <div data-par="-0.32" data-midtile="1" style="position:absolute; top:44%; left:-46px; width:200px; z-index:2;">
+        <div data-tile="1"><img src="assets/images/img6.jpg" alt="Teaching session" style="display:block; width:100%; border-radius:16px; border:6px solid #FFFFFF; box-sizing:border-box; box-shadow:0 16px 44px rgba(16,35,59,0.22); animation:tileFloat 6.5s 1.1s ease-in-out infinite;"></div>
+      </div>
+      <div data-par="0.24" style="position:absolute; bottom:12%; left:13%; width:210px; z-index:2;">
+        <div data-tile="1"><img src="assets/images/photo-01.jpg" alt="Career clinic mentoring" style="display:block; width:100%; border-radius:16px; border:6px solid #FFFFFF; box-sizing:border-box; box-shadow:0 16px 44px rgba(16,35,59,0.22); animation:tileFloat 7.8s 0.3s ease-in-out infinite;"></div>
+      </div>
+      <div data-par="-0.14" style="position:absolute; bottom:9%; right:3%; width:250px; z-index:2;">
+        <div data-tile="1"><img src="assets/images/img4.jpg" alt="Classroom teaching" style="display:block; width:100%; border-radius:16px; border:6px solid #FFFFFF; box-sizing:border-box; box-shadow:0 16px 44px rgba(16,35,59,0.22); animation:tileFloat 9s 0.9s ease-in-out infinite;"></div>
+      </div>
+      <div data-par="0.30" data-midtile="1" style="position:absolute; top:47%; right:11%; width:180px; z-index:2;">
+        <div data-tile="1"><img src="assets/images/img3.jpg" alt="AI panel in Vietnam" style="display:block; width:100%; border-radius:16px; border:6px solid #FFFFFF; box-sizing:border-box; box-shadow:0 16px 44px rgba(16,35,59,0.22); animation:tileFloat 7.2s 1.5s ease-in-out infinite;"></div>
+      </div>
+
+      <div style="position:relative; z-index:3; display:flex; flex-direction:column; align-items:center; gap:24px;">
+        <div style="animation:heroUp 0.9s ease both; font-size:14px; font-weight:700; letter-spacing:0.16em; color:#2E6DAE;">14–23 DECEMBER 2026</div>
+        <h1 style="animation:heroUp 0.9s 0.1s ease both; margin:0; font-weight:900; font-size:clamp(42px,4.8vw,68px); line-height:1.14; color:#10233B; max-width:840px; text-wrap:balance;">Bring hands-on AI and entrepreneurship education to your Bangkok community</h1>
+        <p style="animation:heroUp 0.9s 0.2s ease both; margin:0; font-size:19px; line-height:1.6; color:#33465C; max-width:520px;">Co-host a workshop in Bangkok led by <strong>Stanford faculty</strong> and <strong>experienced technology practitioners</strong>.</p>
+        <div style="animation:heroUp 0.9s 0.3s ease both; margin-top:6px;">
+          <a href="#cohost" style="background:#10233B; color:#FFFFFF; border-radius:999px; padding:15px 28px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none; display:inline-block;" style-hover="background:#24507E; color:#FFFFFF;">CO-HOST A WORKSHOP →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT + WORD REVEAL -->
+    <div style="padding:130px 32px 60px;">
+      <div style="max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:30px;">
+        <p data-wordblock="1" style="margin:0; font-size:clamp(24px,2.8vw,38px); line-height:1.4; font-weight:500; color:#10233B;"><sc-for list="{{ aboutWords1 }}" as="w" hint-placeholder-count="18"><span data-wrd="1" style="opacity:0.15; transition:opacity 0.3s ease; font-weight:{{ w.fw }};">{{ w.t }}</span></sc-for></p>
+        <p data-wordblock="1" style="margin:0; font-size:clamp(24px,2.8vw,38px); line-height:1.4; font-weight:500; color:#10233B;"><sc-for list="{{ aboutWords2 }}" as="w" hint-placeholder-count="16"><span data-wrd="1" style="opacity:0.15; transition:opacity 0.3s ease; font-weight:{{ w.fw }};">{{ w.t }}</span></sc-for></p>
+      </div>
+    </div>
+
+    <!-- PAST WORKSHOPS -->
+    <div id="program" data-reveal="1" style="padding:40px 0 130px;">
+      <h2 style="margin:0 0 36px; padding:0 48px; font-weight:900; font-size:36px; color:#10233B; max-width:1100px; margin-left:auto; margin-right:auto; box-sizing:border-box; width:100%;">Past Workshops &amp; Programs</h2>
+      <div data-marquee-window="1" style="overflow:hidden; width:100%;">
+        <div data-marquee="1" style="display:flex; gap:22px; width:max-content; padding:6px 0; animation:marquee 45s linear infinite;" style-hover="animation-play-state:paused;">
+          <sc-for list="{{ workshopsLoop }}" as="w" hint-placeholder-count="6">
+            <a href="{{ w.link }}" target="{{ w.target }}" rel="noreferrer" style="width:330px; flex:none; background:#FFFFFF; border-radius:20px; padding:14px 14px 20px; box-shadow:0 10px 34px rgba(16,35,59,0.16); display:flex; flex-direction:column; gap:12px; text-decoration:none; color:#10233B;">
+              <div role="img" aria-label="{{ w.alt }}" style="{{ w.imgStyle }}"></div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:10px; padding:0 4px;">
+                <div style="font-size:17px; font-weight:700; line-height:1.3;">{{ w.title }}</div>
+                <span style="flex:none; color:#7A8AA0;">↗</span>
+              </div>
+              <div style="display:flex; gap:14px; align-items:center; font-size:13px; color:#5A6B7E; padding:0 4px; flex-wrap:wrap;"><span>{{ w.date }}</span><span>{{ w.place }}</span><sc-if value="{{ w.tag }}" hint-placeholder-val="{{ false }}"><span style="border:1px solid #C9D4E0; border-radius:999px; padding:2px 10px; font-size:11px; letter-spacing:0.04em; color:#5A6B7E;">{{ w.tag }}</span></sc-if></div>
+              <p style="margin:0; padding:0 4px; font-size:13.5px; line-height:1.55; color:#5A6B7E;">{{ w.desc }}</p>
+            </a>
+          </sc-for>
+        </div>
+      </div>
+      <div style="max-width:1100px; margin:36px auto 0; padding:0 48px; box-sizing:border-box;">
+        <a href="https://www.zhoueesleyfoundation.com/programs/" style="background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none; display:inline-block;" style-hover="background:#24507E; color:#FFFFFF;">EXPLORE PAST PROGRAMS →</a>
+      </div>
+    </div>
+
+    <!-- WHAT WE TEACH -->
+    <div id="curriculum" style="background:#FBF9F4; padding:110px 32px;">
+      <div data-reveal="1" style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:36px;">
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <h2 style="margin:0; font-weight:900; font-size:36px;">What We Teach</h2>
+          <p style="margin:0; font-size:17px; line-height:1.65; color:#33465C; max-width:700px;">The same frameworks Professor Chuck Eesley teaches at Stanford, adapted for classrooms and teams in Bangkok. Choose the module that fits your group, or combine several.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+          <sc-for list="{{ modules }}" as="md" hint-placeholder-count="3">
+            <div sc-camel-on-click="{{ md.toggle }}" style="perspective:1600px; cursor:pointer; height:400px;">
+              <div style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition:transform 0.65s cubic-bezier(0.4,0.1,0.2,1); transform:{{ md.rot }};">
+                <div style="position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; border:1px solid #D8DEE6; background:#FFFFFF; border-radius:20px; padding:32px; display:flex; flex-direction:column; gap:18px; box-shadow:0 8px 26px rgba(16,35,59,0.07);">
+                  <div style="font-size:13px; font-weight:700; letter-spacing:0.12em; color:#2E6DAE;">MODULE {{ md.num }}</div>
+                  <h3 style="margin:0; font-size:24px; font-weight:900; line-height:1.25;">{{ md.title }}</h3>
+                  <p style="margin:0; font-size:16px; line-height:1.6; color:#33465C;">{{ md.desc }}</p>
+                  <div style="margin-top:auto; font-size:13px; font-weight:700; letter-spacing:0.06em; color:#24507E;">CLICK TO SEE DETAILS →</div>
+                </div>
+                <div style="position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; transform:rotateY(180deg); border-radius:20px; background:#10233B; color:#E8EEF5; padding:32px; display:flex; flex-direction:column; gap:22px; overflow:auto; box-shadow:0 8px 26px rgba(16,35,59,0.18);">
+                  <div style="font-size:12px; font-weight:700; letter-spacing:0.12em; color:#8FB8E0;">MODULE {{ md.num }} · {{ md.title }}</div>
+                  <div style="display:flex; flex-direction:column; gap:6px;"><div style="font-size:11px; font-weight:700; letter-spacing:0.12em; color:#8FB8E0;">HOW IT WORKS</div><p style="margin:0; font-size:15px; line-height:1.6;">{{ md.how }}</p></div>
+                  <div style="display:flex; flex-direction:column; gap:6px;"><div style="font-size:11px; font-weight:700; letter-spacing:0.12em; color:#8FB8E0;">PARTICIPANTS LEAVE WITH</div><p style="margin:0; font-size:16px; line-height:1.5; font-weight:700; color:#FFFFFF;">{{ md.leave }}</p></div>
+                  <div style="margin-top:auto; font-size:13px; font-weight:700; letter-spacing:0.06em; color:#AACDEE;">← BACK TO SUMMARY</div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div><a href="#cohost" style="background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none; display:inline-block;" style-hover="background:#24507E; color:#FFFFFF;">CO-HOST A WORKSHOP →</a></div>
+      </div>
+    </div>
+
+    <!-- TEACHING TEAM -->
+    <div id="team" style="background:linear-gradient(160deg,#081527 0%,#122C4D 55%,#24507E 100%); padding:110px 32px;">
+      <div data-reveal="1" style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:12px;">
+          <h2 style="margin:0; font-weight:900; font-size:36px; color:#FFFFFF;">Teaching Team</h2>        </div>
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+          <sc-for list="{{ team }}" as="m" hint-placeholder-count="4">
+            <div sc-camel-on-click="{{ m.toggle }}" style="perspective:1400px; cursor:pointer; height:400px;">
+              <div style="position:relative; width:100%; height:100%; transform-style:preserve-3d; transition:transform 0.65s cubic-bezier(0.4,0.1,0.2,1); transform:{{ m.rot }};">
+                <div style="position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:20px; overflow:hidden; background:repeating-linear-gradient(45deg, #35618F, #35618F 12px, #3E6C9C 12px, #3E6C9C 24px); box-shadow:0 10px 30px rgba(0,0,0,0.25); display:flex; flex-direction:column; justify-content:flex-end;">
+                  <div style="{{ m.photoStyle }}"></div>
+                  <div style="margin:14px; padding:14px 16px; border-radius:14px; background:rgba(255,255,255,0.28); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); color:#FFFFFF;">
+                    <div style="font-size:17px; font-weight:700;">{{ m.name }}</div>
+                    <div style="font-size:13px; opacity:0.9;">{{ m.role }}</div>
+                  </div>
+                </div>
+                <div style="position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; transform:rotateY(180deg); border-radius:20px; background:#FFFFFF; box-shadow:0 10px 30px rgba(0,0,0,0.25); padding:22px; display:flex; flex-direction:column; gap:8px; overflow:auto;">
+                  <div style="font-size:16px; font-weight:700;">{{ m.name }}</div>
+                  <div style="font-size:12px; color:#5A6B7E;">{{ m.role }}</div>
+                  <p style="margin:0; font-size:12.5px; line-height:1.55; color:#33465C;">{{ m.bio }}</p>
+                  <div style="margin-top:auto; align-self:flex-end; display:flex; gap:12px; align-items:center;">
+                    <sc-if value="{{ m.site }}" hint-placeholder-val="{{ false }}"><a href="{{ m.site }}" target="_blank" rel="noreferrer" sc-camel-on-click="{{ m.stopProp }}" aria-label="Personal site" style="color:#5A6B7E; display:flex;" style-hover="color:#24507E;"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></sc-if>
+                    <sc-if value="{{ m.li }}" hint-placeholder-val="{{ false }}"><a href="{{ m.li }}" target="_blank" rel="noreferrer" sc-camel-on-click="{{ m.stopProp }}" aria-label="LinkedIn profile" style="color:#5A6B7E; display:flex;" style-hover="color:#24507E;"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.75H5.67v8.59h2.67zM7 8.58a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.76v-4.71c0-2.52-1.34-3.69-3.13-3.69-1.45 0-2.1.8-2.46 1.36v-1.17H10.1c.04.75 0 8.59 0 8.59h2.66v-4.8c0-.26.02-.51.1-.7.2-.51.64-1.04 1.39-1.04.98 0 1.43.75 1.43 1.85v4.69h2.66z"></path></svg></a></sc-if>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin:0; font-size:15px; color:rgba(255,255,255,0.85);"><strong>Chuck and Lijie co-founded the Zhou &amp; Eesley Family Foundation.</strong> <a href="https://www.zhoueesleyfoundation.com/" style="color:#C7E3FF;" style-hover="color:#FFFFFF;">Learn about the Foundation and its work</a></p>
+      </div>
+    </div>
+
+    <!-- WHO THE WORKSHOPS ARE FOR (on sky) -->
+    <div id="audience" data-reveal="1" style="padding:120px 32px;">
+      <div style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:32px;">
+        <h2 style="margin:0; font-weight:900; font-size:36px;">Who The Workshops Are For</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:4px; align-self:flex-start; background:rgba(255,255,255,0.55); border-radius:999px; padding:5px;">
+          <sc-for list="{{ audGroups }}" as="g" hint-placeholder-count="5">
+            <button sc-camel-on-click="{{ g.sel }}" style="{{ g.rowStyle }}">{{ g.label }}</button>
+          </sc-for>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:stretch;">
+          <div style="flex:1.6 1 420px; background:rgba(248,251,255,0.96); border-radius:20px; padding:44px 36px 40px; display:flex; flex-direction:column; gap:26px; box-shadow:0 10px 32px rgba(16,35,59,0.12); min-height:240px;">
+            <p style="margin:0; font-size:clamp(22px,2.2vw,27px); font-weight:700; line-height:1.3; color:#10233B; text-wrap:pretty;">{{ audDesc }}</p>
+            <div style="border-top:1px solid #D8DEE6; padding-top:22px; display:flex; align-items:baseline; gap:16px; flex-wrap:wrap;">
+              <span style="font-size:10.5px; font-weight:700; letter-spacing:0.14em; color:#5A6B7E;">OUTCOME</span>
+              <span style="font-family:'EB Garamond',serif; font-style:italic; font-size:19px; color:#24507E;">{{ audOutcome }}</span>
+            </div>
+          </div>
+          <div style="flex:1 1 280px; background:#10233B; color:#FFFFFF; border-radius:20px; padding:28px; display:flex; flex-direction:column; gap:12px;">
+            <div style="font-size:10.5px; font-weight:700; letter-spacing:0.12em; color:#8FB8E0;">WHO WE ESPECIALLY HOPE TO REACH</div>
+            <p style="margin:0; font-size:14.5px; line-height:1.65; color:#FFFFFF;">Under-resourced students, scholarship recipients, women in STEM, students with disabilities, underrepresented founders, and people less confident in English. Our workshops are open to everyone; these are the groups we make an extra effort to reach. Educators are welcome to join and adapt the material for their own classrooms.</p>
+          </div>
+        </div>
+        <div style="display:flex; align-items:center; gap:18px; flex-wrap:wrap;">
+          <a href="#cohost" style="background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#24507E; color:#FFFFFF;">TELL US ABOUT YOUR GROUP →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT THE WORKSHOP LOOKS LIKE -->
+    <div id="cohost" style="background:#FBF9F4; padding:110px 32px;">
+      <div data-reveal="1" style="max-width:1100px; margin:0 auto; display:flex; flex-direction:column; gap:40px;">
+        <h2 style="margin:0; font-weight:900; font-size:36px;">What The Workshop Looks Like</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr)); gap:56px; align-items:start;">
+          <div style="display:flex; flex-direction:column; position:sticky; top:100px;">
+            <sc-for list="{{ vSteps }}" as="st" hint-placeholder-count="3">
+              <div sc-camel-on-click="{{ st.sel }}" style="display:grid; grid-template-columns:48px minmax(0,1fr); gap:22px; cursor:pointer;">
+                <div style="display:flex; flex-direction:column; align-items:center;">
+                  <div style="{{ st.dotStyle }}">{{ st.num }}</div>
+                  <div style="{{ st.lineStyle }}"></div>
+                </div>
+                <div style="display:flex; flex-direction:column; gap:10px; padding:10px 0 52px;">
+                  <div style="{{ st.titleStyle }}">{{ st.title }}</div>
+                  <p style="margin:0; font-size:15.5px; line-height:1.6; color:#33465C;">{{ st.lead }}</p>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          <div style="background:#FFFFFF; border:1px solid #E3E7EC; border-radius:22px; padding:32px 36px; min-height:520px;">
+            <iframe ref="{{ frameRef }}" src="{{ formSrc }}" title="Design a workshop with us" style="{{ formFrameStyle }}"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY BANGKOK -->
+    <div id="whybangkok" style="position:relative; overflow:hidden;">
+      <img src="assets/images/img0.jpg" alt="2024 Bangkok school workshops" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:15% 50%;">
+      <div style="position:absolute; inset:0; background:linear-gradient(100deg,#050F1D 0%,#0E2440 45%, rgba(14,36,64,0.55) 75%, rgba(14,36,64,0.12) 100%);"></div>
+      <div style="position:relative; max-width:1100px; margin:0 auto; padding:150px 32px;">
+        <div data-reveal="1" style="display:flex; flex-direction:column; gap:22px; color:#FFFFFF; max-width:560px;">
+          <h2 style="margin:0; font-weight:900; font-size:36px;">Why Bangkok</h2>
+          <p style="margin:0; font-size:17px; line-height:1.75; color:rgba(255,255,255,0.92);">Thailand has no shortage of ambitious students, but few structured chances to build something of their own. In 2024, Pear Chotbunwong saw the appetite firsthand while running workshops for 500+ students across 10 Bangkok schools — the 2026 program brings that work back at scale.</p>
+          <div><a href="#whybangkok" sc-camel-on-click="{{ openPear }}" style="cursor:pointer; display:inline-block; background:rgba(255,255,255,0.18); color:#FFFFFF; border:1.5px solid rgba(255,255,255,0.7); border-radius:999px; padding:13px 24px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#FFFFFF; color:#10233B;">READ PEAR’S STORY →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPONSOR (on sky) -->
+    <div id="sponsor" data-reveal="1" style="padding:130px 32px;">
+      <div style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 400px; gap:56px; align-items:start;">
+        <div style="display:flex; flex-direction:column; gap:22px; color:#10233B;">
+          <h2 style="margin:0; font-weight:900; font-size:40px; text-wrap:balance;">Help Make The Bangkok Program Possible</h2>
+          <p style="margin:0; font-size:18px; line-height:1.7; max-width:560px; color:#33465C;">The program is initiated and supported by the Zhou &amp; Eesley Family Foundation, and all instructors teach pro bono.</p>
+          <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:6px;">
+            <a href="#cohost" style="background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#24507E; color:#FFFFFF;">BECOME A SPONSOR →</a>
+            <a href="#sponsor" sc-camel-on-click="{{ openBudget }}" style="cursor:pointer; background:rgba(255,255,255,0.5); color:#10233B; border:1.5px solid #10233B; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#FFFFFF; color:#10233B;">VIEW DETAILED BUDGET</a>
+          </div>
+          <a href="https://drive.google.com/file/d/1af05R1ePIMQKANAuJ4OahZUOaGyrO86H/view?usp=sharing" target="_blank" rel="noopener" style="align-self:flex-start; font-size:15px; font-weight:700; color:#24507E; text-decoration:underline;" style-hover="color:#10233B;">Download Sponsorship Proposal Deck ↓</a>
+        </div>
+        <div style="background:rgba(255,255,255,0.85); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-radius:20px; padding:30px; display:flex; flex-direction:column; gap:12px; box-shadow:0 12px 40px rgba(16,35,59,0.16);">
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.12em; color:#5A6B7E;">ESTIMATED TOTAL PROGRAM BUDGET</div>
+          <div style="font-size:32px; font-weight:900;">THB 500,000</div>
+          <p style="margin:0; font-size:14.5px; line-height:1.6; color:#33465C;">Sponsorship covers travel, accommodation, local coordination, and workshop materials so the team can reach as many learners in Thailand as possible. Contributions of any size are appreciated.</p>
+          <div style="border-top:1px solid #D8DEE6; padding-top:14px; display:flex; flex-direction:column; gap:10px;">
+            <div style="font-size:11px; font-weight:700; letter-spacing:0.12em; color:#5A6B7E;">RECOGNITION MAY INCLUDE</div>
+            <div style="display:flex; flex-wrap:wrap; gap:8px;">
+              <span style="border:1px solid #C6D4E2; border-radius:999px; padding:7px 14px; font-size:13px; color:#33465C;">Logo placement</span>
+              <span style="border:1px solid #C6D4E2; border-radius:999px; padding:7px 14px; font-size:13px; color:#33465C;">Sponsor acknowledgment</span>
+              <span style="border:1px solid #C6D4E2; border-radius:999px; padding:7px 14px; font-size:13px; color:#33465C;">Impact summary</span>
+              <span style="border:1px solid #C6D4E2; border-radius:999px; padding:7px 14px; font-size:13px; color:#33465C;">Employee workshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq" style="background:#FBF9F4; padding:110px 32px;">
+      <div data-reveal="1" style="max-width:840px; margin:0 auto; display:flex; flex-direction:column; gap:36px;">
+        <h2 style="margin:0; font-weight:900; font-size:36px;">Frequently Asked Questions</h2>
+        <div style="display:flex; flex-direction:column; border-top:1px solid #D8DEE6;">
+          <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="10">
+            <div style="border-bottom:1px solid #D8DEE6;">
+              <button sc-camel-on-click="{{ f.toggle }}" style="width:100%; display:flex; justify-content:space-between; align-items:center; gap:16px; background:none; border:none; padding:20px 4px; font-family:'Chivo',sans-serif; font-size:17px; font-weight:500; text-align:left; cursor:pointer; color:#10233B;" style-hover="color:#24507E;">
+                <span>{{ f.q }}</span><span style="font-size:22px; flex:none;">{{ f.mark }}</span>
+              </button>
+              <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:0 4px 22px 4px; font-size:15.5px; line-height:1.65; color:#33465C; max-width:720px;">{{ f.a }}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- FINAL CTA (on sky) -->
+    <div id="attend" data-reveal="1" style="padding:150px 32px; text-align:center;">
+      <div style="max-width:800px; margin:0 auto; display:flex; flex-direction:column; gap:24px; align-items:center; color:#10233B;">
+        <h2 style="margin:0; font-weight:900; font-size:clamp(38px,4.4vw,56px); text-wrap:balance;">Help Thai Youths Turn Ideas into Action</h2>
+        <p style="margin:0; font-size:18px; line-height:1.7; max-width:580px; color:#33465C;">Host a workshop, introduce us to a community, help fund the program, or equip educators to teach the material forward.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
+          <a href="#cohost" style="background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#24507E; color:#FFFFFF;">BECOME A CO-HOST →</a>
+          <a href="#sponsor" style="background:rgba(255,255,255,0.5); color:#10233B; border:1.5px solid #10233B; border-radius:999px; padding:14px 26px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#FFFFFF; color:#10233B;">HELP FUND THE PROGRAM</a>
+        </div>
+        <p style="margin:10px 0 0; font-size:15px;"><strong>Interested in attending rather than hosting?</strong> <a href="#attend" sc-camel-on-click="{{ openAttend }}" style="color:#24507E; cursor:pointer;" style-hover="color:#10233B;">Join the participant interest list</a></p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="background:#10233B; color:#E8EEF5; padding:30px 48px;">
+      <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; font-size:14px; flex-wrap:wrap; gap:16px;">
+        <span style="font-family:'EB Garamond',serif; font-style:italic; font-size:17px;">Zhou &amp; Eesley Family Foundation · © 2026</span>
+        <div style="display:flex; gap:24px;">
+          <a href="https://www.zhoueesleyfoundation.com/" style="color:#E8EEF5;" style-hover="color:#AACDEE;">About Foundation</a>
+          <a href="https://tally.so/r/aOQVgy" target="_blank" rel="noopener" style="color:#E8EEF5;" style-hover="color:#AACDEE;">Partner</a>
+          <a href="#top" sc-camel-on-click="{{ openContact }}" style="color:#E8EEF5; cursor:pointer;" style-hover="color:#AACDEE;">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <sc-if value="{{ pearOpen }}" hint-placeholder-val="{{ false }}">
+    <div sc-camel-on-click="{{ closePear }}" style="position:fixed; inset:0; z-index:200; background:rgba(16,35,59,0.55); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
+      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:680px; max-height:calc(100vh - 48px); overflow:auto; background:#10233B; color:#FFFFFF; border-radius:24px; overflow:hidden; box-shadow:0 16px 50px rgba(16,35,59,0.3); display:flex; flex-direction:column;">
+          <button sc-camel-on-click="{{ closePear }}" aria-label="Close" style="position:absolute; top:16px; right:16px; z-index:3; width:44px; height:44px; border:none; border-radius:999px; background:rgba(16,35,59,0.55); color:#FFFFFF; font-size:20px; cursor:pointer;">×</button>
+          <div style="position:absolute; top:22px; left:40px; right:80px; z-index:3; display:flex; gap:6px;">
+            <sc-for list="{{ pearBars }}" as="b" hint-placeholder-count="4">
+              <div sc-camel-on-click="{{ b.go }}" style="{{ b.style }}"></div>
+            </sc-for>
+          </div>
+
+          <sc-if value="{{ pear0 }}" hint-placeholder-val="{{ true }}">
+            <div style="position:relative; height:280px;">
+              <img src="assets/images/img16.jpg" alt="Dream Day at Triamudom Suksa School" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 40%;">
+              <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(16,35,59,0.35) 0%, rgba(16,35,59,0) 35%, rgba(16,35,59,0) 55%, #10233B 100%);"></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ pear1 }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:58px 40px 0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;">
+              <sc-for list="{{ pearSchools }}" as="s" hint-placeholder-count="6">
+                <div style="display:flex; flex-direction:column; gap:6px;">
+                  <img src="{{ s.img }}" alt="{{ s.name }}" style="display:block; width:100%; height:96px; object-fit:cover; border-radius:10px;">
+                  <div style="font-size:11px; line-height:1.35; color:#AACDEE;">{{ s.name }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ pear2 }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:58px 40px 0; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px;">
+              <img src="assets/images/photo-00.jpg" alt="Dream Day at Bangkok University" style="display:block; width:100%; height:200px; object-fit:cover; object-position:40% 30%; border-radius:14px;">
+              <img src="assets/images/photo-04.jpg" alt="Dream Day at Triamudom Suksa School" style="display:block; width:100%; height:200px; object-fit:cover; object-position:25% 40%; border-radius:14px;">
+            </div>
+          </sc-if>
+          <sc-if value="{{ pear3 }}" hint-placeholder-val="{{ false }}">
+            <div style="position:relative; height:240px;">
+              <img src="assets/images/img15.jpg" alt="Dream Day at Bangkok University Scholarship Program" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 40%;">
+              <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(16,35,59,0.35) 0%, rgba(16,35,59,0) 35%, rgba(16,35,59,0) 55%, #10233B 100%);"></div>
+            </div>
+          </sc-if>
+
+          <div style="padding:22px 40px 0; display:flex; align-items:center; gap:12px;">
+            <img src="assets/images/photo-03.jpg" alt="Pear Chotbunwong" style="width:40px; height:40px; border-radius:999px; object-fit:cover; object-position:center 20%;">
+            <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; color:#8FB8E0;">PEAR'S STORY · {{ pearLabel }}</div>
+          </div>
+          <div style="padding:16px 40px 0; min-height:200px; display:flex; flex-direction:column; gap:16px;">
+            <sc-if value="{{ pear0 }}" hint-placeholder-val="{{ true }}">
+              <h2 style="margin:0; font-size:32px; font-weight:900; line-height:1.15;">From Stanford back to Bangkok</h2>
+              <p style="margin:0; font-size:17px; line-height:1.7; color:#E8EEF5;">After my first year at Stanford, I returned to Bangkok with a question: what if more students in Thailand had access to the entrepreneurship education I was receiving?</p>
+            </sc-if>
+            <sc-if value="{{ pear1 }}" hint-placeholder-val="{{ false }}">
+              <div style="font-size:26px; font-weight:900; line-height:1.2;">500+ students · 10 schools</div>
+              <p style="margin:0; font-size:17px; line-height:1.65; color:#E8EEF5;">I came home and taught the entrepreneurship class I'd just taken to 500+ students across 10 schools and universities in Bangkok. I named the program "Dream Day."</p>
+            </sc-if>
+            <sc-if value="{{ pear2 }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex; flex-direction:column; gap:4px;">
+                <div style="font-family:'EB Garamond',serif; font-style:italic; font-size:22px; line-height:1.4;">"You gave me the comfort that someone believes in my dreams."</div>
+                <div style="font-size:11.5px; letter-spacing:0.08em; color:#AACDEE;">— DREAM DAY PARTICIPANT, BANGKOK UNIVERSITY, SEP 2024</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:4px;">
+                <div style="font-family:'EB Garamond',serif; font-style:italic; font-size:22px; line-height:1.4;">"The Dream Day Workshop was the best day of my entire year."</div>
+                <div style="font-size:11.5px; letter-spacing:0.08em; color:#AACDEE;">— DREAM DAY PARTICIPANT, TRIAMUDOM SUKSA SCHOOL, SEP 2024</div>
+              </div>
+            </sc-if>
+            <sc-if value="{{ pear3 }}" hint-placeholder-val="{{ false }}">
+              <h2 style="margin:0; font-size:28px; font-weight:900; line-height:1.2;">This year, my Stanford professor is flying to Bangkok to teach the class himself.</h2>
+              <p style="margin:0; font-size:17px; line-height:1.7; color:#E8EEF5;">If you'd like to work with us, please reach out. I'd love to hear from you!</p>
+              <div style="border-top:1px solid rgba(255,255,255,0.18); padding-top:18px; display:flex; flex-direction:column; gap:12px;">
+                <div style="font-size:11px; font-weight:700; letter-spacing:0.14em; color:#8FB8E0;">CONTACT PEAR <span style="font-weight:400; letter-spacing:0.04em; color:rgba(170,205,238,0.7);">(Bangkok Program Coordinator)</span></div>
+                <div style="display:grid; grid-template-columns:auto minmax(0,1fr); column-gap:20px; row-gap:8px; font-size:15.5px;">
+                  <span style="font-size:11px; font-weight:700; letter-spacing:0.1em; color:#AACDEE; align-self:center;">EMAIL</span><a href="mailto:pearchot@stanford.edu" style="color:#FFFFFF; text-decoration:none;" style-hover="color:#AACDEE;">pearchot@stanford.edu</a>
+                  <span style="font-size:11px; font-weight:700; letter-spacing:0.1em; color:#AACDEE; align-self:center;">PHONE</span><a href="tel:+66899265492" style="color:#FFFFFF; text-decoration:none;" style-hover="color:#AACDEE;">+66 89-926-5492</a>
+                  <span style="font-size:11px; font-weight:700; letter-spacing:0.1em; color:#AACDEE; align-self:center;">LINE ID</span><span style="color:#FFFFFF;">pearc.</span>
+                </div>
+              </div>
+            </sc-if>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:20px 40px 30px;">
+            <button sc-camel-on-click="{{ pearPrev }}" style="{{ pearPrevStyle }}">← Back</button>
+            <button sc-camel-on-click="{{ pearNext }}" style="{{ pearNextStyle }}">{{ pearNextLabel }}</button>
+          </div>
+        </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ attendOpen }}" hint-placeholder-val="{{ false }}">
+    <div sc-camel-on-click="{{ closeAttend }}" style="position:fixed; inset:0; z-index:200; background:rgba(16,35,59,0.55); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
+      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:1020px; max-height:calc(100vh - 48px); overflow:auto; background:#FBF9F4; border-radius:24px; padding:56px 52px; box-shadow:0 16px 50px rgba(16,35,59,0.25); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:44px; align-items:start; color:#10233B;">
+        <button sc-camel-on-click="{{ closeAttend }}" aria-label="Close" style="position:absolute; top:16px; right:16px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
+        <div style="display:flex; flex-direction:column; gap:20px;">
+          <h2 style="margin:0; font-weight:900; font-size:clamp(28px,3.2vw,40px); text-wrap:balance;">Attend a Workshop</h2>
+          <p style="margin:0; font-size:16px; line-height:1.7; color:#33465C;">Free, in English with Thai support, no experience needed.</p>
+          <p style="margin:0; font-size:15px; line-height:1.7; color:#33465C;">Each workshop's venue and dates are confirmed with a co-host first. Some workshops are private and open only to the host's group. For those open to the public, join the list and we'll send you an invitation once the details are confirmed.</p>
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div style="display:flex; gap:14px; font-size:15px; align-items:baseline;"><span style="color:#2E6DAE; font-weight:700; flex:none;">1</span><span>Join the interest list</span></div>
+            <div style="display:flex; gap:14px; font-size:15px; align-items:baseline;"><span style="color:#2E6DAE; font-weight:700; flex:none;">2</span><span>We confirm venue &amp; dates with co-hosts</span></div>
+            <div style="display:flex; gap:14px; font-size:15px; align-items:baseline;"><span style="color:#2E6DAE; font-weight:700; flex:none;">3</span><span>You get an invitation to public workshops</span></div>
+          </div>
+          <p style="margin:0; font-size:14px; color:#5A6270;">Questions? <a href="#top" sc-camel-on-click="{{ openContact }}" style="color:#24507E; cursor:pointer;" style-hover="color:#10233B;">Contact the team</a></p>
+        </div>
+        <div style="background:#FFFFFF; border-radius:16px; border:1px solid #E2DDD2; padding:20px;">
+          <iframe src="https://tally.so/embed/aQqBVy?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" width="100%" height="520" sc-camel-frame-border="0" title="Participant interest list" style="border:none; display:block;"></iframe>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+  <div style="{{ leaveStyle }}"></div>
+  <sc-if value="{{ contactOpen }}" hint-placeholder-val="{{ false }}">
+    <div sc-camel-on-click="{{ closeContact }}" style="position:fixed; inset:0; z-index:210; background:rgba(16,35,59,0.55); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
+      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:min(440px, 100%); max-height:calc(100vh - 48px); overflow:auto; box-sizing:border-box; background:#FFFFFF; border-radius:24px; box-shadow:0 16px 50px rgba(16,35,59,0.25); padding:48px 48px 44px; display:flex; flex-direction:column; gap:14px; align-items:center; text-align:center; color:#10233B;">
+        <button sc-camel-on-click="{{ closeContact }}" aria-label="Close" style="position:absolute; top:16px; right:16px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
+        <h2 style="margin:0 0 10px; font-weight:900; font-size:26px; line-height:1.2; text-wrap:balance;">Contact the Bangkok Program Team</h2>
+        <img src="assets/images/img13.jpg" alt="Pear Chotbunwong" style="width:110px; height:110px; border-radius:50%; object-fit:cover; object-position:center 22%;">
+        <div style="font-size:22px; font-weight:700;">Pear Chotbunwong</div>
+        <div style="font-size:14px; color:#5A6B7E; margin-top:-8px;">Bangkok Program Coordinator</div>
+        <div style="display:flex; flex-direction:column; gap:8px; font-size:15px; margin-top:6px;">
+          <a href="mailto:pearchot@stanford.edu" style="color:#24507E;" style-hover="color:#10233B;">pearchot@stanford.edu</a>
+          <a href="tel:+66899265492" style="color:#10233B; text-decoration:none;" style-hover="color:#24507E;">+66 89-926-5492</a>
+          <span>LINE ID: pearc.</span>
+        </div>
+        <a href="mailto:pearchot@stanford.edu" style="margin-top:14px; background:#10233B; color:#FFFFFF; border-radius:999px; padding:14px 28px; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none;" style-hover="background:#24507E; color:#FFFFFF;">SUBMIT AN INQUIRY</a>
+      </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ budgetOpen }}" hint-placeholder-val="{{ false }}">
+    <div sc-camel-on-click="{{ closeBudget }}" style="position:fixed; inset:0; z-index:200; background:rgba(16,35,59,0.45); display:flex; align-items:center; justify-content:center; padding:24px; overflow:auto;">
+      <div sc-camel-on-click="{{ stopProp }}" style="position:relative; width:100%; max-width:780px; max-height:calc(100vh - 48px); overflow:auto; background:#FBF9F4; border-radius:24px; padding:56px 56px 48px; box-shadow:0 16px 50px rgba(16,35,59,0.25); display:flex; flex-direction:column; gap:28px; color:#10233B;">
+        <button sc-camel-on-click="{{ closeBudget }}" aria-label="Close" style="position:absolute; top:18px; right:18px; width:44px; height:44px; border:none; border-radius:999px; background:#E4E9EF; color:#10233B; font-size:20px; cursor:pointer;" style-hover="background:#D8DEE6;">×</button>
+        <div>
+          <h2 style="margin:0; font-weight:900; font-size:clamp(28px,3.2vw,40px);">Bangkok Program Budget</h2>
+          <div style="font-size:19px; color:#2E6DAE; font-weight:700; margin-top:8px;">THB 500,000</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px;">
+        <div><div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:6px; gap:16px;"><span>International travel, insurance, visas</span><strong style="white-space:nowrap;">THB 220,400</strong></div><div style="height:10px; background:#E4E9EF; border-radius:5px;"><div style="width:44%; height:100%; background:#2E6DAE; border-radius:5px;"></div></div></div>
+        <div><div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:6px; gap:16px;"><span>Accommodation and meals</span><strong style="white-space:nowrap;">THB 115,700</strong></div><div style="height:10px; background:#E4E9EF; border-radius:5px;"><div style="width:23%; height:100%; background:#2E6DAE; border-radius:5px;"></div></div></div>
+        <div><div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:6px; gap:16px;"><span>Thailand coordination</span><strong style="white-space:nowrap;">THB 66,000</strong></div><div style="height:10px; background:#E4E9EF; border-radius:5px;"><div style="width:13%; height:100%; background:#2E6DAE; border-radius:5px;"></div></div></div>
+        <div><div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:6px; gap:16px;"><span>Local transport</span><strong style="white-space:nowrap;">THB 40,700</strong></div><div style="height:10px; background:#E4E9EF; border-radius:5px;"><div style="width:8%; height:100%; background:#2E6DAE; border-radius:5px;"></div></div></div>
+        <div><div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:6px; gap:16px;"><span>Materials and communications</span><strong style="white-space:nowrap;">THB 17,200</strong></div><div style="height:10px; background:#E4E9EF; border-radius:5px;"><div style="width:3%; height:100%; background:#2E6DAE; border-radius:5px;"></div></div></div>
+        <div><div style="display:flex; justify-content:space-between; font-size:15px; margin-bottom:6px; gap:16px;"><span>Contingency</span><strong style="white-space:nowrap;">THB 40,000</strong></div><div style="height:10px; background:#E4E9EF; border-radius:5px;"><div style="width:8%; height:100%; background:#2E6DAE; border-radius:5px;"></div></div></div>
+      </div>
+      <div style="display:flex; justify-content:space-between; border-top:2px solid #10233B; padding-top:16px; font-size:17px; font-weight:700;"><span>Base total</span><span>THB 500,000</span></div>
+      <p style="margin:0; font-size:14px; line-height:1.7; color:#5A6270;">Includes three instructors. All instructors teach pro bono.</p>
+        
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;parallax&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0,&quot;max&quot;:2.5,&quot;step&quot;:0.1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;carouselSeconds&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:45,&quot;min&quot;:10,&quot;max&quot;:120,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  state = { open: null, flipped: {}, modFlipped: {}, openStep: 0 };
+  frameRef = React.createRef();
+  componentDidMount() {
+    this._onTally = (e) => {
+      if (typeof e.origin !== 'string' || !e.origin.includes('tally.so')) return;
+      if (this.frameRef.current && e.source !== this.frameRef.current.contentWindow) return;
+      let d = e.data;
+      if (typeof d === 'string') { try { d = JSON.parse(d); } catch { return; } }
+      if (!d || !d.event) return;
+      const p = d.payload || {};
+      const start = this.state.formStart || 1;
+      if (d.event === 'Tally.FormPageView' && p.page) this.setState({ formPage: Math.min(Math.max(p.page, start), 3) });
+      if (d.event === 'Tally.FormSubmitted') this.setState({ formPage: 3 });
+      if (p.height) this.setState({ formH: Math.max(p.height, 400) });
+    };
+    window.addEventListener('message', this._onTally);
+    // Intro: tiles gather at hero center, then spread to their positions
+    setTimeout(() => {
+      const hero = document.querySelector('[data-hero]');
+      if (!hero) return;
+      const hr = hero.getBoundingClientRect();
+      const cx = hr.left + hr.width / 2, cy = hr.top + hr.height / 2;
+      const tiles = Array.from(document.querySelectorAll('[data-tile]'));
+      tiles.forEach(el => {
+        const r = el.getBoundingClientRect();
+        const dx = cx - (r.left + r.width / 2), dy = cy - (r.top + r.height / 2);
+        el.style.transform = 'translate(' + dx + 'px,' + dy + 'px) scale(0.45)';
+        el.style.opacity = '0';
+      });
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        tiles.forEach((el, i) => {
+          el.style.transition = 'transform 1.2s cubic-bezier(0.22,0.8,0.3,1) ' + (0.25 + i * 0.09) + 's, opacity 0.45s ease ' + (0.1 + i * 0.09) + 's';
+          el.style.opacity = '1';
+          el.style.transform = 'translate(0,0) scale(1)';
+        });
+      }));
+    }, 60);
+    // Keep mid tiles out of the centered text band on narrower screens
+    this._fitTiles = () => {
+      const narrow = window.innerWidth < 1300;
+      document.querySelectorAll('[data-par]').forEach(el => {
+        if (el.getAttribute('data-midtile')) el.style.display = narrow ? 'none' : 'block';
+      });
+    };
+    window.addEventListener('resize', this._fitTiles);
+    this._fitTiles();
+    // Scroll: tile parallax + word-by-word about reveal
+    const strength = this.props.parallax ?? 1;
+    this._onScroll = () => {
+      const y = window.scrollY;
+      document.querySelectorAll('[data-par]').forEach(el => {
+        const f = parseFloat(el.getAttribute('data-par')) * strength;
+        el.style.marginTop = '0';
+        el.style.translate = '0 ' + (y * f) + 'px';
+      });
+      const vh = window.innerHeight;
+      document.querySelectorAll('[data-wordblock]').forEach(block => {
+        const r = block.getBoundingClientRect();
+        const words = block.querySelectorAll('[data-wrd]');
+        const progress = Math.max(0, Math.min(1, (vh * 0.65 - r.top) / (vh * 0.3)));
+        const n = Math.floor(progress * words.length);
+        words.forEach((w, i) => { w.style.opacity = i < n ? '1' : '0.15'; });
+      });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+    const mq = document.querySelector('[data-marquee]');
+    if (mq) mq.style.animationDuration = (this.props.carouselSeconds ?? 45) + 's';
+    this._io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          this._io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(36px)';
+      el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+      this._io.observe(el);
+    });
+  }
+  componentWillUnmount() {
+    window.removeEventListener('message', this._onTally);
+    window.removeEventListener('scroll', this._onScroll);
+    if (this._io) this._io.disconnect();
+  }
+  renderVals() {
+    const RIDS = {"standalone-assets/img0.jpg":"res0","standalone-assets/img1.jpg":"res1","standalone-assets/img2.jpg":"res2","standalone-assets/img3.jpg":"res3","standalone-assets/img4.jpg":"res4","standalone-assets/img5.jpg":"res5","standalone-assets/img6.jpg":"res6","standalone-assets/img7.jpg":"res7","standalone-assets/img8.jpg":"res8","standalone-assets/img9.jpg":"res9","standalone-assets/img10.jpg":"res10","standalone-assets/img11.jpg":"res11","standalone-assets/img12.jpg":"res12","standalone-assets/img13.jpg":"res13","standalone-assets/img14.jpg":"res14","standalone-assets/img15.jpg":"res15","standalone-assets/img16.jpg":"res16","standalone-assets/img17.jpg":"res17","standalone-assets/img18.jpg":"res18","standalone-assets/img19.jpg":"res19"};
+    const RS = p => (window.__resources && window.__resources[RIDS[p]]) || p;
+    const mkWords = (parts) => {
+      const out = [];
+      parts.forEach(p => p.text.split(' ').forEach(w => out.push({ t: w + ' ', fw: p.bold ? 700 : 500 })));
+      return out;
+    };
+    const aboutWords1 = mkWords([
+      { text: 'The' }, { text: 'Zhou & Eesley Family Foundation', bold: true },
+      { text: 'brings technology and entrepreneurship education to underserved communities around the world.' }
+    ]);
+    const aboutWords2 = mkWords([
+      { text: 'From' }, { text: '14–23 December 2026,', bold: true },
+      { text: 'the team is bringing that work to students and communities in' },
+      { text: 'Bangkok.', bold: true }
+    ]);
+    const workshops = [
+      { img: RS('standalone-assets/img0.jpg'), title: 'Bangkok School Workshops', date: '2024', place: 'Bangkok, Thailand', desc: 'Pear brought entrepreneurship education to 500+ students through 10 Bangkok school workshops in 2024.', link: '#whybangkok', alt: 'Pear and a teacher with a group of smiling students in a Bangkok school hall' },
+      { img: RS('standalone-assets/img1.jpg'), title: 'Malaysia AI Learning & Transformation', date: '2025–2026', place: 'Penang & Kuala Lumpur', desc: 'Training educators, students, and non-profits to apply AI in real workflows.', link: 'https://www.zhoueesleyfoundation.com/programs/malaysia/', pos: 'right center', alt: 'Four panelists on stage at a Malaysia AI learning event' },
+      { img: RS('standalone-assets/img2.jpg'), title: 'AI & Entrepreneurship in Taiwan', date: '', place: 'Rural Hsinchu County, Taiwan', desc: 'Volunteer AI and entrepreneurship teaching for rural Hsinchu students.', link: 'https://www.zhoueesleyfoundation.com/programs/taiwan/', alt: 'Instructors, teachers, and students together in a rural Hsinchu classroom' },
+      { img: RS('standalone-assets/img3.jpg'), title: 'Vietnam AI & Entrepreneurship Series', date: 'December 2024', place: 'Ho Chi Minh City', desc: 'Three partner events connecting AI, entrepreneurship, and practical tools.', link: 'https://www.zhoueesleyfoundation.com/programs/vietnam/', pos: 'center top', alt: 'Speaker panel beneath a projected title at a Ho Chi Minh City event' },
+      { img: RS('standalone-assets/img4.jpg'), title: 'Moloka\u02BBi AI & CS Classrooms', date: '', place: 'Hawai\u02BBi, USA', desc: 'AI and computer science learning rooted in Moloka\u02BBi classrooms.', link: 'https://www.zhoueesleyfoundation.com/programs/molokai/', alt: 'Instructor and students working with a screen in a Moloka\u02BBi classroom' },
+      { img: RS('standalone-assets/img5.jpg'), title: 'Teaching at LOHADA, Tanzania', date: 'June 2023', place: 'LOHADA orphanage', desc: 'Teaching at LOHADA alongside locally connected partners.', link: 'https://www.zhoueesleyfoundation.com/programs/tanzania/', pos: 'center bottom', alt: 'Chuck teaching a classroom audience at LOHADA with a TV screen' },
+      { img: RS('standalone-assets/img6.jpg'), title: 'MIT MEETConf Workshop', date: 'December 17, 2022', place: 'Jerusalem', desc: 'A one-day workshop helping students build, test, and present technology ideas.', link: 'https://www.zhoueesleyfoundation.com/programs/meet/', pos: '60% 50%', alt: 'Chuck working with students at a MEETConf workshop in Jerusalem' },
+      { img: RS('standalone-assets/img7.jpg'), title: 'Uganda Refugee Entrepreneurship', date: '', place: 'Uganda', desc: 'Microloans, mentorship, and research supporting refugee entrepreneurs.', link: 'https://www.zhoueesleyfoundation.com/programs/uganda/', pos: '50% 45%', alt: 'Five program partners standing together on a wooden deck in Uganda' }
+    ];
+    const workshopsOld = [
+      { img: RS('standalone-assets/img8.jpg'), title: 'Bangkok School Workshops', date: '2024', place: 'Bangkok, Thailand', desc: 'Entrepreneurship workshops for 500+ students across 10 Bangkok schools, led by Pear Chotbunwong. Finalist in the Stanford EdTech Accelerator.' },
+      { img: RS('standalone-assets/img1.jpg'), title: 'Project ASPIRAS AI', date: '2024–2025', place: 'Malaysia', desc: 'Helping Malaysian nonprofits integrate AI into their operations and impact work, led by Lijie Zhou.' },
+      { img: RS('standalone-assets/img9.jpg'), title: 'Teaching with AIS', date: 'Placeholder', place: 'Thailand', desc: 'Professor Eesley has taught in Thailand with AIS through the Stanford Thailand Research Consortium.' },
+      { img: RS('standalone-assets/img3.jpg'), title: 'Placeholder — Vietnam program', date: 'Placeholder', place: 'Vietnam', desc: 'Placeholder description — details of the Foundation\u2019s teaching in Vietnam.' },
+      { img: RS('standalone-assets/img5.jpg'), title: 'Placeholder — East Africa program', date: 'Placeholder', place: 'Uganda & Tanzania', desc: 'Placeholder description — details of the Foundation\u2019s teaching in Uganda and Tanzania.' },
+      { img: RS('standalone-assets/img2.jpg'), title: 'Placeholder — Taiwan program', date: 'Placeholder', place: 'Taiwan', desc: 'Placeholder description — details of the Foundation\u2019s teaching in Taiwan.' }
+    ];
+    const team = [
+      { name: 'Prof. Chuck Eesley', role: 'Stanford University · Co-Founder', photo: RS('standalone-assets/img10.jpg'), pos: 'center 25%', li: 'https://www.linkedin.com/in/chuckeesley', site: 'https://msande.stanford.edu/people/charles-eesley', bio: 'Professor of Management Science & Engineering at Stanford. Faculty Co-Director of the Stanford Technology Ventures Program. PhD, MIT Sloan. Researches how universities and policy shape startup ecosystems, with fieldwork across Thailand, China, Chile, Uganda and Silicon Valley.' },
+      { name: 'Lijie Zhou', role: 'Co-Founder & CEO', photo: RS('standalone-assets/img11.jpg'), pos: 'center 60%', li: 'https://www.linkedin.com/in/lijiezhou/', bio: 'Forward Deployed Engineer at Reducto AI ($108M raised). Previously engineering at Facebook, McAfee, Gusto and Inworld AI. Leads Project AspirasAI, training 15 Malaysian nonprofits to adopt AI in their operations.' },
+      { name: 'Phil Wickham', role: 'Guest Lecturer', photo: RS('standalone-assets/img12.jpg'), pos: 'center 20%', li: 'https://www.linkedin.com/in/pwickham/', site: 'https://www.sozoventures.com/team/phil-wickham/', bio: 'Lecturer at Stanford\u2019s Graduate School of Engineering on innovation and capital formation. Founder and General Partner of Sozo Ventures, a Silicon Valley\u2013Japan firm backing Twitter, Coinbase and Zoom. As CEO of the Kauffman Fellows, grew the venture-capital leadership program to 40+ countries.' },
+      { name: 'Pear Chotbunwong', role: 'Bangkok Program Coordinator', photo: RS('standalone-assets/img13.jpg'), pos: 'center 22%', li: 'https://www.linkedin.com/in/pear-manyasiri-chotbunwong/', site: 'https://pearchotbunwong-site.vercel.app/', bio: 'Stanford student, born and raised in Bangkok. Ran entrepreneurship workshops for 500+ students across 10 Thai schools and universities. Founder of HER (women\u2019s health nonprofit). Forbes 30 Under 30. Diana Award.' }
+    ];
+    const qa = [
+      ['Who can co-host a workshop?', 'Schools, universities, companies, nonprofits, and community groups — any organization that can bring an audience together in Bangkok during 14–23 December 2026. We especially hope to reach under-resourced students, scholarship recipients, women in STEM, students with disabilities, and communities with less access to this kind of education — but that is a hope, not a requirement. Workshops are open to participants from any background, and no screening is needed.'],
+      ['What does a co-host provide?', 'Participants, a venue, and local coordination. We bring the instructors, curriculum, materials, and facilitation — there is no teaching fee.'],
+      ['Can my company host without sponsoring?', 'Yes — sponsorship is never required, and any amount is welcome to help cover program costs. Because expanding access to education is the Foundation\u2019s primary goal, schools, nonprofits, and underserved communities come first in scheduling. But with ten days in Bangkok, we are optimistic there will also be time for companies that cannot sponsor — submit an inquiry and we will explore what is possible.'],
+      ['Can sponsorship be part of CSR?', 'Yes. Sponsorship can be structured as part of your CSR program, with recognition such as logo placement, an impact summary, and an employee workshop. Note that the partnership is with the Zhou & Eesley Family Foundation, not Stanford University: the material is adapted from frameworks Professor Eesley teaches at Stanford, but this is a Foundation initiative, and Stanford\u2019s name and branding may not be used to promote it.'],
+      ['What can the workshop cover?', 'Topics range from AI foundations and agentic workflows to lean startup, customer discovery, design thinking, and storytelling and pitching — shaped together with you.'],
+      ['How long is a workshop, and how many people can attend?', 'Formats run from 60–90 minutes to a half or full day, for interactive groups of 20–30 or lecture-style sessions of 100+ participants.'],
+      ['Is technical experience required?', 'No. The workshops are practical and hands-on, designed for beginners as well as experienced participants.'],
+      ['What language will the workshops be taught in?', 'Workshops are taught in English. Thai and sign-language interpreters are warmly welcomed.'],
+      ['Can educators learn the curriculum and use it afterward?', 'Yes. Educators are welcome to learn alongside us and explore how to adapt the material for their own classrooms.'],
+      ['Can I attend without hosting a workshop?', 'Yes — join the participant interest list and we will let you know about public sessions.']
+    ];
+    const modules = [
+      { num: '01', title: 'Find the Right Idea', desc: 'Use design thinking, customer discovery, market validation, and rapid hypothesis testing to uncover meaningful needs and define a promising opportunity.', how: 'Customer interviews, insight mapping, case studies, opportunity-screening exercises, and mentor feedback.', leave: 'A validated problem and clearly defined opportunity.' },
+      { num: '02', title: 'Build an AI-Powered Solution', desc: 'Use accessible generative AI tools and collaborative sprints to turn the opportunity into a practical prototype or workflow.', how: 'Hands-on demonstrations, small-team building, rapid prototyping, testing, responsible-AI checks, and iteration.', leave: 'A tested prototype, AI workflow, or live demonstration.' },
+      { num: '03', title: 'Pitch a Compelling Venture', desc: 'Develop the business model, assess unit economics and scalability, and communicate the idea through a persuasive story.', how: 'Business-model exercises, unit-economics analysis, real examples, team rehearsal, peer critique, and presentation coaching.', leave: 'A viable venture concept and polished pitch.' }
+    ];
+    const stepsData = [
+      { num: '01', title: 'Tell us what you need', lead: 'Choose the audience, scale, format, date, and venue.', items: [
+        { label: '1 · DURATION', opts: ['60–90 minutes', 'Half day', 'Full day'] },
+        { label: '2 · GROUP SIZE', opts: ['20–30 interactive workshop', '100+ lecture or large group'] },
+        { label: '3 · AUDIENCE TYPE', opts: ['Public — open to the wider public', 'Community — for a group your organization serves', 'Internal — for people within your organization'] },
+        { label: '4 · DATE', value: 'Choose a date between 14–23 December 2026.' },
+        { label: '5 · VENUE', value: 'Confirm a suitable venue in Bangkok.' }
+      ], note: null },
+      { num: '02', title: 'Shape the session together', lead: 'Select one teaching module or combine several around a clear outcome.', items: [
+        { label: 'CHOOSE FROM', opts: ['Build with AI', 'Find the Right Opportunity', 'Tell a Story That Moves People'] }
+      ], note: 'Hop on a Zoom call with our team to shape the content and define what you want participants to walk away with.' },
+      { num: '03', title: 'Host the workshop', lead: 'You bring the participants and venue. We bring the instructors and workshop.', items: [
+        { label: 'YOU PROVIDE', opts: ['Participants and invitations', 'Venue and on-site coordination', 'Local context and accessibility needs'] },
+        { label: 'WE PROVIDE', opts: ['Expert instructors teaching pro bono', 'Tailored curriculum and materials', 'Facilitation and feedback'] }
+      ], note: null }
+    ];
+    const audData = [
+      { label: 'Students', desc: 'Find problems, use AI for research, validate ideas, prototype, and present.', outcome: 'A project concept or prototype.' },
+      { label: 'Educators', desc: 'Use AI and entrepreneurship in project-based learning.', outcome: 'A lesson or classroom framework.' },
+      { label: 'Companies', desc: 'Apply AI to productivity, workflows, innovation, and ownership.', outcome: 'An improved workflow or action plan.' },
+      { label: 'Founders & SMEs', desc: 'Research markets, test products, and prototype.', outcome: 'A tested business idea or next-step plan.' },
+      { label: 'Nonprofits', desc: 'Address community needs with AI and entrepreneurial thinking.', outcome: 'An initiative or project proposal.' }
+    ];
+    const audIdx = this.state.audIdx ?? 0;
+    const hopeOpen = this.state.hopeOpen ?? false;
+    return {
+      pearOpen: !!this.state.pearOpen,
+      openPear: (ev) => { ev.preventDefault(); this.setState({ pearOpen: true, pearCh: 0 }); },
+      closePear: () => this.setState({ pearOpen: false }),
+      ...(() => {
+        const c = this.state.pearCh ?? 0;
+        const L = ['DREAM DAY', '2024', 'TESTIMONIALS', '2026'];
+        const btn = { border: 'none', background: 'none', fontFamily: 'inherit', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', cursor: 'pointer', padding: '12px 0', minHeight: 44 };
+        const P = 'uploads/Pears Story Photos/Dream Day - ';
+        return {
+          pear0: c === 0, pear1: c === 1, pear2: c === 2, pear3: c === 3,
+          pearLabel: L[c],
+          pearBars: L.map((_, i) => ({ go: () => this.setState({ pearCh: i }), style: { flex: 1, height: 4, borderRadius: 2, cursor: 'pointer', background: i <= c ? '#FFFFFF' : 'rgba(255,255,255,0.35)', boxShadow: '0 1px 4px rgba(16,35,59,0.3)', transition: 'background 0.3s ease' } })),
+          pearPrev: () => this.setState({ pearCh: Math.max(0, c - 1) }),
+          pearNext: () => this.setState({ pearCh: c === 3 ? 0 : c + 1 }),
+          pearPrevStyle: { ...btn, color: '#AACDEE', visibility: c === 0 ? 'hidden' : 'visible' },
+          pearNextStyle: { ...btn, color: '#FFFFFF', background: 'rgba(255,255,255,0.14)', borderRadius: 999, padding: '12px 22px' },
+          pearNextLabel: c === 3 ? 'START OVER' : 'NEXT →',
+          pearSchools: [
+            { img: RS(P + 'Bangkok University International Program.png'), name: 'Bangkok University — International Program' },
+            { img: RS(P + 'Bangkok University Scholarship Program.png'), name: 'Bangkok University — Scholarship Program' },
+            { img: RS(P + 'Triamudom Suksa School.png'), name: 'Triamudom Suksa School' },
+            { img: RS(P + 'Bangkok Patana School.png'), name: 'Bangkok Patana School' },
+            { img: RS(P + 'Singapore International School Bangkok.png'), name: 'Singapore International School Bangkok' },
+            { img: RS(P + 'Ruamrudee International School.png'), name: 'Ruamrudee International School' }
+          ]
+        };
+      })(),
+      goSchedule: (ev) => { ev.preventDefault(); this.setState({ leaving: true }); setTimeout(() => { window.location.href = 'Schedule.dc.html'; }, 520); },
+      leaveStyle: { position: 'fixed', inset: 0, zIndex: 300, pointerEvents: this.state.leaving ? 'auto' : 'none', background: 'linear-gradient(180deg, #D8EBFB 0%, #BFDCF5 38%, #9EC8EC 100%)', opacity: this.state.leaving ? 1 : 0, transition: 'opacity 0.5s cubic-bezier(0.4,0,0.2,1)' },
+      contactOpen: !!this.state.contactOpen,
+      openContact: (ev) => { ev.preventDefault(); this.setState({ contactOpen: true }); },
+      closeContact: () => this.setState({ contactOpen: false }),
+      attendOpen: !!this.state.attendOpen,
+      openAttend: (ev) => { ev.preventDefault(); this.setState({ attendOpen: true }); },
+      closeAttend: () => this.setState({ attendOpen: false }),
+      budgetOpen: !!this.state.budgetOpen,
+      openBudget: (ev) => { ev.preventDefault(); this.setState({ budgetOpen: true }); },
+      closeBudget: () => this.setState({ budgetOpen: false }),
+      stopProp: (ev) => ev.stopPropagation(),
+      audGroups: audData.map((g, i) => ({
+        label: g.label,
+        rowStyle: i === audIdx
+          ? { background: '#10233B', color: '#FFFFFF', border: 'none', borderRadius: 999, padding: '10px 20px', fontFamily: 'inherit', fontSize: 14, fontWeight: 700, whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.25s ease' }
+          : { background: 'transparent', color: '#33465C', border: 'none', borderRadius: 999, padding: '10px 20px', fontFamily: 'inherit', fontSize: 14, fontWeight: 400, whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.25s ease' },
+        sel: () => this.setState({ audIdx: i })
+      })),
+      audEyebrow: 'FOR ' + audData[audIdx].label.toUpperCase(),
+      audDesc: audData[audIdx].desc,
+      audOutcome: audData[audIdx].outcome,
+      hopeOpen,
+      hopeBodyStyle: { display: 'grid', gridTemplateRows: hopeOpen ? '1fr' : '0fr', opacity: hopeOpen ? 1 : 0, transition: 'grid-template-rows 0.5s cubic-bezier(0.4,0,0.2,1), opacity 0.45s ease' },
+      hopeCaret: hopeOpen ? '▾' : '▸',
+      toggleHope: () => this.setState(s => ({ hopeOpen: !(s.hopeOpen ?? false) })),
+      aboutWords1, aboutWords2,
+      modules: modules.map((m, i) => ({
+        ...m,
+        rot: this.state.modFlipped[i] ? 'rotateY(180deg)' : 'rotateY(0deg)',
+        toggle: () => this.setState(s => ({ modFlipped: { ...s.modFlipped, [i]: !s.modFlipped[i] } }))
+      })),
+      frameRef: this.frameRef,
+      vSteps: stepsData.map((s, i) => {
+        const on = i === (this.state.formPage || 1) - 1;
+        return {
+          num: s.num, title: s.title, lead: s.lead,
+          sel: () => this.setState({ formPage: i + 1, formStart: i + 1 }),
+          dotStyle: { width: 48, height: 48, borderRadius: 999, background: on ? '#10233B' : '#FFFFFF', color: on ? '#FFFFFF' : '#10233B', border: on ? '2px solid #10233B' : '2px solid #C6D4E2', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 15, fontWeight: 700, flex: 'none', transition: 'all 0.3s ease' },
+          lineStyle: { width: 2, flex: 1, background: i < stepsData.length - 1 ? '#C6D4E2' : 'transparent', marginTop: 6 },
+          titleStyle: { fontSize: 24, fontWeight: 700, lineHeight: 1.25, color: on ? '#10233B' : '#5A6B7E', transition: 'color 0.3s ease' }
+        };
+      }),
+      formSrc: 'https://tally.so/embed/aOQVgy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&step=' + (this.state.formStart || 1),
+      formFrameStyle: { width: '100%', height: this.state.formH || 520, border: 0, display: 'block' },
+      steps: stepsData.map((st, i) => ({
+        ...st,
+        open: this.state.openStep === i,
+        mark: this.state.openStep === i ? '−' : '+',
+        toggle: () => this.setState(s => ({ openStep: s.openStep === i ? null : i }))
+      })),
+      workshopsLoop: workshops.concat(workshops).map(w => ({
+        ...w,
+        target: w.link && w.link.charAt(0) === '#' ? '_self' : '_blank',
+        imgStyle: { width: '100%', height: 180, borderRadius: 14, backgroundImage: 'url("' + w.img + '")', backgroundSize: 'cover', backgroundPosition: w.pos || 'center', backgroundColor: '#E8F0F8' }
+      })),
+      team: team.map((m, i) => ({
+        ...m,
+        photoStyle: m.photo ? { position: 'absolute', inset: 0, backgroundImage: 'url("' + m.photo + '")', backgroundSize: 'cover', backgroundPosition: m.pos || 'center' } : { display: 'none' },
+        rot: this.state.flipped[i] ? 'rotateY(180deg)' : 'rotateY(0deg)',
+        toggle: () => this.setState(s => ({ flipped: { ...s.flipped, [i]: !s.flipped[i] } })),
+        stopProp: (e) => e.stopPropagation()
+      })),
+      faqs: qa.map((p, i) => ({
+        q: p[0], a: p[1],
+        open: this.state.open === i,
+        mark: this.state.open === i ? '−' : '+',
+        toggle: () => this.setState(s => ({ open: s.open === i ? null : i }))
+      }))
+    };
+  }
+}
+</script>
+
+</body></html>
