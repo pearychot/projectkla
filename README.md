@@ -4,25 +4,41 @@ The landing page for the Zhou & Eesley Family Foundation's Bangkok program
 (14–23 December 2026). It's a plain static site: no build step, no package
 install, no external CDN. Every file it needs is in this repo.
 
-Live at <https://www.pearchot.com/projectkla>.
+Deployed from this repo's `main` branch to <https://projectkla.vercel.app>,
+and served at <https://www.pearchot.com/projectkla> and
+<https://www.zhoueesleyfoundation.com/programs/bangkok/projectkla/>. A push to
+`main` updates all three within about a minute.
 
 ## Adding it to the Foundation website
 
-To publish this page at `zhoueesleyfoundation.com/programs/bangkok/projectkla/`
-and link it from the [Bangkok program post](https://www.zhoueesleyfoundation.com/programs/bangkok/),
-clone this repo next to the foundation site repo and give your coding agent
-this prompt from inside the foundation site repo:
+The foundation site serves this page with a Vercel rewrite to
+`projectkla.vercel.app` (no copy of the files), so it updates automatically.
+Clone this repo next to the foundation site repo and give your coding agent
+one of these prompts from inside the foundation site repo.
+
+**First-time setup:**
 
 ```
-Read ../projectkla/docs/add-to-foundation-site.md and follow it: add the
-Project KLA page at /programs/bangkok/projectkla/ and link it from the
-Bangkok program post in the two places it describes. Verify locally, then
-open a PR.
+Read ../projectkla/docs/add-to-foundation-site.md and follow it: serve the
+Project KLA page at /programs/bangkok/projectkla/ with the Vercel rewrite, and
+link it from the Bangkok program post in the two places it describes. Verify
+on the Vercel preview, then open a PR.
 ```
 
-[`docs/add-to-foundation-site.md`](docs/add-to-foundation-site.md) covers
-where the files go, the exact spots in the post to add the links, and how to
-verify the result.
+**If the page's files were copied into the foundation site earlier** (the
+original instructions did this; that copy never updates):
+
+```
+Read ../projectkla/docs/add-to-foundation-site.md and follow "Already copied
+the page into the site? Switch to the live link": delete the copied
+public/programs/bangkok/projectkla folder and add the Vercel rewrite so the
+page updates automatically. Keep the existing links in the Bangkok post.
+Verify on the Vercel preview, then open a PR.
+```
+
+[`docs/add-to-foundation-site.md`](docs/add-to-foundation-site.md) has the
+rewrite rules, the exact spots in the post for the links, how to verify, and a
+fallback of copying the files.
 
 ## Run it locally
 
