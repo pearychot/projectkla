@@ -75,6 +75,11 @@
     grid-auto-flow: column !important;
     gap: 6px !important;
   }
+  /* Parallel sessions in one slot stack instead of sitting side by side */
+  [data-m="sched-slot"] { flex-direction: column !important; }
+  /* Grow each session to fit its text; hyphenate rather than split words anywhere */
+  [data-m="sched-slot"] > * { flex: 1 1 auto !important; hyphens: auto; overflow-wrap: break-word !important; }
+  [data-m="sched-slot"]:not([data-n="1"]) > * { min-height: 46px !important; }
   [data-m="sched-detail"] {
     position: static !important;
     flex: 1 1 100% !important;
